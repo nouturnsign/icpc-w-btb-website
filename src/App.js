@@ -16,7 +16,7 @@ import {
   Stack,
   useDisclosure,
 } from "@chakra-ui/react";
-import React, { Fragment, Suspense } from "react";
+import React, { Suspense } from "react";
 import {
   FaDiscord,
   FaFacebook,
@@ -44,11 +44,11 @@ const ScheduleRedirect = () => {
 
 const MenuContent = () => {
   return (
-    <Fragment>
+    <>
       <NavEntry link="/" label="home" />
       <NavEntry link="/team" label="team" />
       <NavEntry link="/schedule" label="schedule" />
-    </Fragment>
+    </>
   );
 };
 
@@ -74,7 +74,10 @@ const Navbar = () => {
         <Flex alignItems="center">
           <NavLink end to="/">
             <Stack direction="row" justify="center" alignItems="center">
-              <Image h="32px" src="static/icon/acmicpc.png" />
+              <Image
+                h="32px"
+                src={process.env.PUBLIC_URL + "/static/icon/acmicpc.png"}
+              />
             </Stack>
           </NavLink>
           <Box mx="auto" />
@@ -230,10 +233,10 @@ const App = () => {
       <Suspense fallback={FallbackView}>
         <Box pt={16}>
           <Routes>
-            <Route exact path="/" element={<HomeContainer />} />
-            <Route exact path="/schedule" element={<ScheduleRedirect />} />
-            <Route exact path="/team" element={<TeamContainer />} />
-            <Route exact path="/privacy" element={<PrivacyPolicyContainer />} />
+            <Route path="/" element={<HomeContainer />} />
+            <Route path="/schedule" element={<ScheduleRedirect />} />
+            <Route path="/team" element={<TeamContainer />} />
+            <Route path="/privacy" element={<PrivacyPolicyContainer />} />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </Box>

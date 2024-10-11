@@ -47,7 +47,13 @@ const AllMembers = () => {
                   borderColor="brand.500"
                   borderWidth="8px"
                 >
-                  <Image size="128px" src={member.image} rounded="50%" />
+                  <Image
+                    boxSize="128px"
+                    src={
+                      process.env.PUBLIC_URL + "/static/member/" + member.image
+                    }
+                    rounded="50%"
+                  />
                 </Box>
               </AspectRatio>
             </center>

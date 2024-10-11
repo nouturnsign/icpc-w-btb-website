@@ -1,6 +1,6 @@
 const members = [
   {
-    image: "/static/member/wz.JPG",
+    image: "wz.JPG",
     name: "William Zhao",
     position: "President",
     description:
@@ -15,7 +15,7 @@ const members = [
     },
   },
   {
-    image: "/static/member/am.JPG",
+    image: "am.JPG",
     name: "Akash Madiraju",
     position: "Vice President",
     description:
@@ -30,7 +30,7 @@ const members = [
     },
   },
   {
-    image: "/static/member/jliu.JPG",
+    image: "jliu.JPG",
     name: "Jason Liu",
     position: "Vice President",
     description:
@@ -45,7 +45,7 @@ const members = [
     },
   },
   {
-    image: "/static/member/rl.JPG",
+    image: "rl.JPG",
     name: "Robert Lee",
     position: "Advisor, President Emeritus",
     description:
@@ -60,7 +60,7 @@ const members = [
     },
   },
   {
-    image: "/static/member/sn.JPG",
+    image: "sn.JPG",
     name: "Suhas Nagar",
     position: "Advisor, President Emeritus",
     description:
@@ -75,7 +75,7 @@ const members = [
     },
   },
   {
-    image: "/static/member/cc.JPG",
+    image: "cc.JPG",
     name: "Carson Cox",
     position: "Officer",
     description:
@@ -90,7 +90,7 @@ const members = [
     },
   },
   {
-    image: "/static/member/is.JPG",
+    image: "is.JPG",
     name: "Illia Shkirko",
     position: "Officer",
     description:
@@ -105,7 +105,7 @@ const members = [
     },
   },
   {
-    image: "/static/member/jh.JPG",
+    image: "jh.JPG",
     name: "Jason Huang",
     position: "Officer",
     description:
@@ -120,7 +120,7 @@ const members = [
     },
   },
   {
-    image: "/static/member/ad.JPG",
+    image: "ad.JPG",
     name: "Arvin Ding",
     position: "Officer",
     description:
@@ -135,7 +135,7 @@ const members = [
     },
   },
   {
-    image: "/static/member/snal.JPG",
+    image: "snal.JPG",
     name: "Sumith Nalabolu",
     position: "Officer",
     description:
@@ -150,7 +150,7 @@ const members = [
     },
   },
   {
-    image: "/static/member/sk.JPG",
+    image: "sk.JPG",
     name: "Shubham Kumar",
     position: "Officer",
     description:
@@ -165,7 +165,7 @@ const members = [
     },
   },
   {
-    image: "/static/member/xx.JPG",
+    image: "xx.JPG",
     name: "Charlotte Chen",
     position: "Officer",
     description:
@@ -180,7 +180,7 @@ const members = [
     },
   },
   {
-    image: "/static/member/pm.png",
+    image: "pm.png",
     name: "Peony Mong",
     position: "Officer",
     description:
@@ -195,7 +195,7 @@ const members = [
     },
   },
   {
-    image: "/static/member/hh.JPG",
+    image: "hh.JPG",
     name: "Henry Huang",
     position: "Officer",
     description:
@@ -210,7 +210,7 @@ const members = [
     },
   },
   {
-    image: "/static/member/hw.jpg",
+    image: "hw.jpg",
     name: "Henry Wang",
     position: "Officer",
     description: "Second year CS major.",
@@ -224,7 +224,7 @@ const members = [
     },
   },
   {
-    image: "/static/member/sk-fake.JPG",
+    image: "sk-fake.JPG",
     name: "Shreyas Kaasyap",
     position: "Officer",
     description:
@@ -239,7 +239,7 @@ const members = [
     },
   },
   {
-    image: "/static/member/ra.jpg",
+    image: "ra.jpg",
     name: "Rathul Anand",
     position: "Officer",
     description:
@@ -254,7 +254,7 @@ const members = [
     },
   },
   {
-    image: "/static/member/ew.jpg",
+    image: "ew.jpg",
     name: "Eric Wang",
     position: "Officer",
     description:
@@ -269,7 +269,7 @@ const members = [
     },
   },
   {
-    image: "/static/member/ms.JPG",
+    image: "ms.JPG",
     name: "Michael Song",
     position: "Officer",
     description:
@@ -284,7 +284,7 @@ const members = [
     },
   },
   {
-    image: "/static/member/ss.jpg",
+    image: "ss.jpg",
     name: "Surya Subbarao",
     position: "Officer",
     description:
@@ -299,7 +299,7 @@ const members = [
     },
   },
   {
-    image: "/static/member/hz.jpg",
+    image: "hz.jpg",
     name: "Harry Zhou",
     position: "Officer",
     description:

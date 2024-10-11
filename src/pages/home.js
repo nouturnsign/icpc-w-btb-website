@@ -46,7 +46,7 @@ const HomeContainer = () => {
           <Image
             mx="auto"
             objectFit="fit"
-            src="/static/banner.png"
+            src={process.env.PUBLIC_URL + "/static/banner.png"}
             alt="ICPC Banner"
             maxHeight="500px"
           />
@@ -55,7 +55,7 @@ const HomeContainer = () => {
           <Image
             mx="auto"
             objectFit="fit"
-            src="/static/banner-mobile.png"
+            src={process.env.PUBLIC_URL + "/static/banner-mobile.png"}
             alt="ICPC Banner"
             width="100%"
           />
@@ -128,7 +128,10 @@ const HomeContainer = () => {
             <Sponsor
               sponsor_name="Jane Street"
               external_link="https://www.janestreet.com/"
-              img_src="static/sponsors/Jane_Street_Capital_Logo.svg"
+              img_src={
+                process.env.PUBLIC_URL +
+                "/static/sponsors/Jane_Street_Capital_Logo.svg"
+              }
             />
           </Flex>
         </Stack>
