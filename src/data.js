@@ -6,7 +6,13 @@ const config = {
   time: "8AM - 9PM PT",
   datetimeLink:
     "https://www.timeanddate.com/worldclock/fixedtime.html?msg=Break+the+Binary+2024&iso=20241116T08&p1=137&ah=13",
-  isRegistrationOpen: true,
+  isRegistrationOpen: false,
+  isInterestOpen: true,
+  scheduleLink:
+    "https://docs.google.com/document/d/11Dsdcy0NmmrFvqJyCE-iHED6y6aZNKrA6iMvnfxzI9Q/edit?usp=sharing",
+  registerLink: "", // TODO
+  interestLink:
+    "https://docs.google.com/forms/d/e/1FAIpQLSfGJIQRcJR0yAQzoLVhQqd9Db74COT8_vH-gvaDO5lK9TQwOg/viewform",
 };
 
 const members = [

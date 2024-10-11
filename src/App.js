@@ -33,14 +33,20 @@ import { useMediaQuery } from "hooks";
 import HomeContainer from "pages/home";
 import PrivacyPolicyContainer from "pages/privacy";
 import TeamContainer from "pages/team";
-
-const scheduleLink =
-  "https://docs.google.com/document/d/11Dsdcy0NmmrFvqJyCE-iHED6y6aZNKrA6iMvnfxzI9Q/edit?usp=sharing";
+import { config } from "data";
 
 const FallbackView = <h1>Loading</h1>;
 
 const ScheduleRedirect = () => {
-  window.location.replace(scheduleLink);
+  window.location.replace(config.scheduleLink);
+};
+
+const RegisterRedirect = () => {
+  window.location.replace(config.registerLink);
+};
+
+const InterestRedirect = () => {
+  window.location.replace(config.interestLink);
 };
 
 const MenuContent = () => {
@@ -49,6 +55,10 @@ const MenuContent = () => {
       <NavEntry link="/" label="home" />
       <NavEntry link="/organizers" label="organizers" />
       <NavEntry link="/schedule" label="schedule" />
+      {config.isRegistrationOpen && (
+        <NavEntry link="/register" label="register" />
+      )}
+      {config.isInterestOpen && <NavEntry link="/interest" label="interest" />}
     </>
   );
 };
@@ -246,6 +256,8 @@ const App = () => {
             <Route path="/schedule" element={<ScheduleRedirect />} />
             <Route path="/organizers" element={<TeamContainer />} />
             <Route path="/privacy" element={<PrivacyPolicyContainer />} />
+            <Route path="/interest" element={<InterestRedirect />} />
+            <Route path="/register" element={<RegisterRedirect />} />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </Box>

@@ -1,7 +1,6 @@
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import {
   Box,
-  Button,
   Divider,
   Flex,
   Heading,
@@ -14,6 +13,7 @@ import {
 } from "@chakra-ui/react";
 
 import Container from "components/container";
+import EmphasisLinkButton from "components/emphasislinkbutton";
 import MetaHelmet from "components/metahelmet";
 import Sponsor from "components/sponsor";
 import { config } from "data";
@@ -98,17 +98,17 @@ const HomeContainer = () => {
             performing high schoolers.
           </Text>
           <Flex wrap="wrap" justify="center" align="center">
+            {config.isInterestOpen && (
+              <EmphasisLinkButton
+                url={config.interestLink}
+                text="Interest Form"
+              />
+            )}
             {config.isRegistrationOpen && (
-              <Link to="register" target="_blank" rel="noopener noreferrer">
-                <Button
-                  m={3}
-                  fontSize={["1xl", "2xl"]}
-                  variantColor="brand"
-                  variant="outline"
-                >
-                  Register Now!
-                </Button>
-              </Link>
+              <EmphasisLinkButton
+                url={config.registerLink}
+                text="Register Now!"
+              />
             )}
           </Flex>
         </Stack>
