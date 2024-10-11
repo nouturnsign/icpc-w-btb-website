@@ -2,6 +2,7 @@
   "name": "icpc-w-btb-website",
   "version": "0.1.0",
   "homepage": "https://nouturnsign.github.io/icpc-w-btb-website",
+  "license": "MIT",
   "dependencies": {
     "@chakra-ui/icons": "^2.2.4",
     "@chakra-ui/react": "^2.10.2",
