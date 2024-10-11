@@ -6,7 +6,6 @@ import {
   SimpleGrid,
   Stack,
   Text,
-  Tooltip,
 } from "@chakra-ui/react";
 import React from "react";
 import { Helmet } from "react-helmet";
@@ -15,16 +14,6 @@ import Container from "components/container";
 import { members as membersData } from "data";
 
 const AllMembers = () => {
-  const funFacts = [
-    "ice cream",
-    "professor",
-    "editor",
-    "language",
-    "TV show",
-    "course",
-  ];
-  const randFact = funFacts[Math.floor(Math.random() * 6)];
-
   return (
     <SimpleGrid
       minChildWidth="300px"
@@ -34,37 +23,30 @@ const AllMembers = () => {
     >
       {membersData.map((member, index) => (
         <Box key={index} rounded="lg" overflow="hidden" p={2}>
-          <Tooltip
-            hasArrow
-            label={`favorite ${randFact}: ${member.funFacts[randFact]}`}
-            placement="top"
-          >
-            <center>
-              <AspectRatio maxW="152px" ratio={1}>
-                <Box
-                  p="4px"
+          <center>
+            <AspectRatio maxW="152px" ratio={1}>
+              <Box
+                p="4px"
+                rounded="50%"
+                borderColor="brand.500"
+                borderWidth="8px"
+              >
+                <Image
+                  boxSize="128px"
+                  src={
+                    process.env.PUBLIC_URL + "/static/member/" + member.image
+                  }
                   rounded="50%"
-                  borderColor="brand.500"
-                  borderWidth="8px"
-                >
-                  <Image
-                    boxSize="128px"
-                    src={
-                      process.env.PUBLIC_URL + "/static/member/" + member.image
-                    }
-                    rounded="50%"
-                  />
-                </Box>
-              </AspectRatio>
-            </center>
-          </Tooltip>
+                />
+              </Box>
+            </AspectRatio>
+          </center>
           <Heading as="h4" fontSize={["md", "lg"]} mt={2}>
             {member.name}
           </Heading>
           <Text fontSize={["sm", "md"]} mt={2}>
             {member.position}
           </Text>
-          <Text>{member.description}</Text>
         </Box>
       ))}
     </SimpleGrid>
