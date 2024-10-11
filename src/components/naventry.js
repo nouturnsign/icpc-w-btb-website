@@ -1,7 +1,7 @@
 import { Button } from "@chakra-ui/react";
 import { NavLink } from "react-router-dom";
 
-const NavEntry = (link, label) => {
+const NavEntry = ({ link, label }) => {
   return (
     <NavLink
       to={link}

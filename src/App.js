@@ -11,12 +11,12 @@ import {
   Heading,
   IconButton,
   Image,
+  Link,
   SimpleGrid,
   Stack,
   useDisclosure,
-  useMediaQuery,
 } from "@chakra-ui/react";
-import React, { Fragment, Redirect, Suspense } from "react";
+import React, { Fragment, Suspense } from "react";
 import {
   FaDiscord,
   FaFacebook,
@@ -24,32 +24,33 @@ import {
   FaInstagram,
   FaMedium,
 } from "react-icons/fa";
-import { Link, NavLink, Navigate, Route, Routes } from "react-router-dom";
+import { NavLink, Navigate, Route, Routes } from "react-router-dom";
 
 import Container from "./components/container";
 import NavEntry from "./components/naventry";
 import HomeContainer from "./pages/home";
 import PrivacyPolicyContainer from "./pages/privacy";
 import TeamContainer from "./pages/team";
+import { useMediaQuery } from "./hooks";
 
 const FallbackView = <h1>Loading</h1>;
 const scheduleLink =
   "https://docs.google.com/document/d/11Dsdcy0NmmrFvqJyCE-iHED6y6aZNKrA6iMvnfxzI9Q/edit?usp=sharing";
 
-const Navbar = (props) => {
+const MenuContent = () => {
+  return (
+    <Fragment>
+      <NavEntry link="/" label="home" />
+      <NavEntry link="/team" label="team" />
+      <NavEntry link="/schedule" label="schedule" />
+    </Fragment>
+  );
+};
+
+const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
   const isMobile = !useMediaQuery("(min-width: 768px)");
-
-  const MenuContent = () => {
-    return (
-      <Fragment>
-        <NavEntry link="/" label="home" />
-        <NavEntry link="/team" label="team" />
-        <NavEntry link="/schedule" label="schedule" />
-      </Fragment>
-    );
-  };
 
   return (
     <Box
@@ -67,12 +68,12 @@ const Navbar = (props) => {
       <Container>
         <Flex alignItems="center">
           <NavLink end to="/">
-            <Stack isInline justify="center" alignItems="center">
+            <Stack direction="row" justify="center" alignItems="center">
               <Image h="32px" src="static/icon/acmicpc.png" />
             </Stack>
           </NavLink>
           <Box mx="auto" />
-          {isMobile ? (
+          {!isMobile ? (
             <MenuContent />
           ) : (
             <Stack direction="row">
@@ -204,14 +205,6 @@ const Footer = () => (
           </NavLink>
         </Box>
       </SimpleGrid>
-      <Link href="https://www.netlify.com" isExternal>
-        <Image
-          padding="10px"
-          margin="auto"
-          src="https://www.netlify.com/img/global/badges/netlify-light.svg"
-          alt="Deploys by Netlify"
-        />
-      </Link>
       <Box my="16px" />
       <Heading
         width="100%"
@@ -236,7 +229,7 @@ const App = () => {
             <Route
               exact
               path="/schedule"
-              element={<Redirect to={scheduleLink} />}
+              element={<Navigate to={scheduleLink} />}
             />
             <Route exact path="/team" element={<TeamContainer />} />
             <Route exact path="/privacy" element={<PrivacyPolicyContainer />} />
