@@ -11,8 +11,8 @@ import {
 import React from "react";
 import { Helmet } from "react-helmet";
 
-import Container from "../components/container";
-import { members as membersData } from "../data";
+import Container from "components/container";
+import { members as membersData } from "data";
 
 const AllMembers = () => {
   const funFacts = [

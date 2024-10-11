@@ -10,7 +10,7 @@ import {
   Link,
 } from "@chakra-ui/react";
 
-import Container from "../components/container";
+import Container from "components/container";
 
 const PrivacyPolicyContainer = (props) => (
   <div className="regionals">

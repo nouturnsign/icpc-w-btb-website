@@ -26,12 +26,12 @@ import {
 } from "react-icons/fa";
 import { NavLink, Navigate, Route, Routes } from "react-router-dom";
 
-import Container from "./components/container";
-import NavEntry from "./components/naventry";
-import HomeContainer from "./pages/home";
-import PrivacyPolicyContainer from "./pages/privacy";
-import TeamContainer from "./pages/team";
-import { useMediaQuery } from "./hooks";
+import Container from "components/container";
+import NavEntry from "components/naventry";
+import HomeContainer from "pages/home";
+import PrivacyPolicyContainer from "pages/privacy";
+import TeamContainer from "pages/team";
+import { useMediaQuery } from "hooks";
 
 const scheduleLink =
   "https://docs.google.com/document/d/11Dsdcy0NmmrFvqJyCE-iHED6y6aZNKrA6iMvnfxzI9Q/edit?usp=sharing";
@@ -231,14 +231,10 @@ const App = () => {
         <Box pt={16}>
           <Routes>
             <Route exact path="/" element={<HomeContainer />} />
-            <Route
-              exact
-              path="/schedule"
-              element={<Navigate to={scheduleLink} />}
-            />
+            <Route exact path="/schedule" element={<ScheduleRedirect />} />
             <Route exact path="/team" element={<TeamContainer />} />
             <Route exact path="/privacy" element={<PrivacyPolicyContainer />} />
-            <Route path="*" element={<ScheduleRedirect />} />
+            <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </Box>
       </Suspense>

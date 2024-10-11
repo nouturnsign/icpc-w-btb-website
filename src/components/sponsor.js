@@ -1,7 +1,7 @@
 import { Image, Link } from "@chakra-ui/react";
 import React from "react";
 
-import { useMediaQuery } from "../hooks";
+import { useMediaQuery } from "hooks";
 
 const Sponsor = ({ sponsor_name, external_link, img_src }) => {
   const isMobile = !useMediaQuery("(min-width: 768px)");

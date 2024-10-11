@@ -12,9 +12,9 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
-import Container from "../components/container";
-import Sponsor from "../components/sponsor";
-import { useMediaQuery } from "../hooks";
+import Container from "components/container";
+import Sponsor from "components/sponsor";
+import { useMediaQuery } from "hooks";
 
 const HomeContainer = () => {
   const isMobile = !useMediaQuery("(min-width: 768px)");
