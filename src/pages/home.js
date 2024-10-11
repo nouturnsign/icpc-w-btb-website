@@ -8,39 +8,20 @@ import {
   Stack,
   Text,
 } from "@chakra-ui/react";
-import React from "react";
-import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
 import Container from "components/container";
+import MetaHelmet from "components/metahelmet";
 import Sponsor from "components/sponsor";
 import { useMediaQuery } from "hooks";
 
 const HomeContainer = () => {
   const isMobile = !useMediaQuery("(min-width: 768px)");
 
+  // TODO: descriptions
   return (
     <div className="home">
-      <Helmet>
-        <title>Home | ACM ICPC at UCLA</title>
-        <meta
-          name="description"
-          content="Welcome to ACM ICPC at UCLA. Learn more about who we are and why we do what we do!"
-        />
-        <meta name="keywords" content="acm,icpc,ucla,competitive,programming" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Home | ACM ICPC at UCLA" />
-        <meta
-          property="og:description"
-          content="Welcome to ACM ICPC at UCLA. Learn more about who we are and why we do what we do!"
-        />
-        <meta property="og:url" content="https://icpc.uclaacm.com/" />
-        <meta
-          property="og:image"
-          content="https://icpc.uclaacm.com/static/icon/logo256.png"
-        />
-        <meta property="og:site_name" content="ACM ICPC at UCLA" />
-      </Helmet>
+      <MetaHelmet description="Description" />
       <Box bg="#FCEDF3">
         {!isMobile && (
           <Image

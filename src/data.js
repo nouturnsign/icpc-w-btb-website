@@ -1,3 +1,9 @@
+const config = {
+  baseURL: "https://nouturnsign.github.io/icpc-w-btb-website/",
+  title: "Break the Binary 2024",
+  keywords: "acm,icpc,ucla,competitive,programming", // TODO: add keywords?
+};
+
 const members = [
   {
     image: "wz.JPG",
@@ -86,4 +92,4 @@ const members = [
   },
 ];
 
-export { members };
+export { config, members };

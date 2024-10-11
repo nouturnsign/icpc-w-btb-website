@@ -8,10 +8,10 @@ import {
   Text,
 } from "@chakra-ui/react";
 import React from "react";
-import { Helmet } from "react-helmet";
 
 import Container from "components/container";
 import { members as membersData } from "data";
+import MetaHelmet from "components/metahelmet";
 
 const AllMembers = () => {
   return (
@@ -55,26 +55,7 @@ const AllMembers = () => {
 
 const TeamContainer = () => (
   <div className="team">
-    <Helmet>
-      <title>Our Team | ACM ICPC at UCLA</title>
-      <meta name="description" content="Meet Our Team for ACM ICPC at UCLA." />
-      <meta
-        name="keywords"
-        content="team,acm,icpc,ucla,competitive,programming"
-      />
-      <meta property="og:type" content="website" />
-      <meta property="og:title" content="Team | ACM ICPC at UCLA" />
-      <meta
-        property="og:description"
-        content="Meet Our Team for ACM ICPC at UCLA."
-      />
-      <meta property="og:url" content="https://icpc.uclaacm.com/team" />
-      <meta
-        property="og:image"
-        content="https://icpc.uclaacm.com/static/icon/logo256.png"
-      />
-      <meta property="og:site_name" content="ACM ICPC at UCLA" />
-    </Helmet>
+    <MetaHelmet description="Break the Binary Organizers" />
     <Container narrow>
       <Heading as="h1" fontSize={["2xl", "3xl"]} textAlign="center" py={4}>
         Our Team

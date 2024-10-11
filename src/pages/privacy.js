@@ -1,5 +1,4 @@
 import React from "react";
-import { Helmet } from "react-helmet";
 import {
   Heading,
   Stack,
@@ -11,26 +10,11 @@ import {
 } from "@chakra-ui/react";
 
 import Container from "components/container";
+import MetaHelmet from "components/metahelmet";
 
 const PrivacyPolicyContainer = (props) => (
   <div className="regionals">
-    <Helmet>
-      <title>ICPC | ACM ICPC at UCLA</title>
-      <meta name="description" content="Our privacy policy." />
-      <meta
-        name="keywords"
-        content="competition,regionals,team,acm,icpc,ucla,competitive,programming"
-      />
-      <meta property="og:type" content="website" />
-      <meta property="og:title" content="ICPC | ACM ICPC at UCLA" />
-      <meta property="og:description" content="Our privacy policy." />
-      <meta property="og:url" content="https://icpc.uclaacm.com/icpc" />
-      <meta
-        property="og:image"
-        content="https://icpc.uclaacm.com/static/icon/logo256.png"
-      />
-      <meta property="og:site_name" content="ACM ICPC at UCLA" />
-    </Helmet>
+    <MetaHelmet description="Privacy policy." />
     <Container narrow>
       <Heading as="h1" fontSize={["5xl"]} textAlign="center" py={4}>
         Privacy Policy
