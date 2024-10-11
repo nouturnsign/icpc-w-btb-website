@@ -1,14 +1,11 @@
 import { ChakraProvider, CSSReset, theme } from "@chakra-ui/react";
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { HashRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
 import App from "App";
 import "index.css";
 import reportWebVitals from "reportWebVitals";
-
-const basename =
-  process.env.NODE_ENV === "production" ? process.env.PUBLIC_URL : "";
 
 const customTheme = {
   ...theme,
@@ -57,9 +54,9 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <ChakraProvider theme={customTheme}>
     <CSSReset />
-    <HashRouter basename={basename}>
+    <BrowserRouter>
       <App />
-    </HashRouter>
+    </BrowserRouter>
   </ChakraProvider>,
 );
 
