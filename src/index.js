@@ -54,7 +54,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <ChakraProvider theme={customTheme}>
     <CSSReset />
-    <BrowserRouter>
+    <BrowserRouter basename="icpc-w-btb-website">
       <App />
     </BrowserRouter>
   </ChakraProvider>,
