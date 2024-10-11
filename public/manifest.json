@@ -1,6 +1,8 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "name": "UCLA ACM Break the Binary",
+  "short_name": "BtB",
+  "lang": "en-US",
+  "description": "Official Website for UCLA ACM ICPC & W's Break the Binary",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,9 +10,24 @@
       "type": "image/x-icon"
     },
     {
+      "src": "logo64.png",
+      "type": "image/png",
+      "sizes": "64x64"
+    },
+    {
+      "src": "logo128.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
       "src": "logo192.png",
       "type": "image/png",
       "sizes": "192x192"
+    },
+    {
+      "src": "logo256.png",
+      "type": "image/png",
+      "sizes": "256x256"
     },
     {
       "src": "logo512.png",
@@ -20,6 +37,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
+  "theme_color": "#FF5479",
   "background_color": "#ffffff"
 }

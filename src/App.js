@@ -14,6 +14,7 @@ import {
   Link,
   SimpleGrid,
   Stack,
+  Text,
   useDisclosure,
 } from "@chakra-ui/react";
 import React, { Suspense } from "react";
@@ -28,10 +29,10 @@ import { NavLink, Navigate, Route, Routes } from "react-router-dom";
 
 import Container from "components/container";
 import NavEntry from "components/naventry";
+import { useMediaQuery } from "hooks";
 import HomeContainer from "pages/home";
 import PrivacyPolicyContainer from "pages/privacy";
 import TeamContainer from "pages/team";
-import { useMediaQuery } from "hooks";
 
 const scheduleLink =
   "https://docs.google.com/document/d/11Dsdcy0NmmrFvqJyCE-iHED6y6aZNKrA6iMvnfxzI9Q/edit?usp=sharing";
@@ -72,14 +73,22 @@ const Navbar = () => {
     >
       <Container>
         <Flex alignItems="center">
-          <NavLink end to="/">
-            <Stack direction="row" justify="center" alignItems="center">
-              <Image
-                h="32px"
-                src={process.env.PUBLIC_URL + "/static/icon/acmicpc.png"}
-              />
-            </Stack>
+          <NavLink to="https://icpc.uclaacm.com/" target="_blank">
+            <Image
+              h="32px"
+              src={process.env.PUBLIC_URL + "/static/icon/acmicpc.svg"}
+              alt="ACM ICPC Logo"
+            />
           </NavLink>
+          <Text fontFamily="heading">&nbsp;&nbsp;&&nbsp;&nbsp;</Text>
+          <NavLink to="https://w.uclaacm.com/" target="_blank">
+            <Image
+              h="32px"
+              src={process.env.PUBLIC_URL + "/static/icon/acmw.svg"}
+              alt="ACM W Logo"
+            />
+          </NavLink>
+          <Text fontFamily="heading">&nbsp;&nbsp;presents</Text>
           <Box mx="auto" />
           {!isMobile ? (
             <MenuContent />
