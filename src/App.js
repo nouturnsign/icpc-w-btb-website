@@ -33,9 +33,14 @@ import PrivacyPolicyContainer from "./pages/privacy";
 import TeamContainer from "./pages/team";
 import { useMediaQuery } from "./hooks";
 
-const FallbackView = <h1>Loading</h1>;
 const scheduleLink =
   "https://docs.google.com/document/d/11Dsdcy0NmmrFvqJyCE-iHED6y6aZNKrA6iMvnfxzI9Q/edit?usp=sharing";
+
+const FallbackView = <h1>Loading</h1>;
+
+const ScheduleRedirect = () => {
+  window.location.replace(scheduleLink);
+};
 
 const MenuContent = () => {
   return (
@@ -233,7 +238,7 @@ const App = () => {
             />
             <Route exact path="/team" element={<TeamContainer />} />
             <Route exact path="/privacy" element={<PrivacyPolicyContainer />} />
-            <Route path="*" element={<Navigate to="/" />} />
+            <Route path="*" element={<ScheduleRedirect />} />
           </Routes>
         </Box>
       </Suspense>
