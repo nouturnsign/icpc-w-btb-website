@@ -47,7 +47,7 @@ const MenuContent = () => {
   return (
     <>
       <NavEntry link="/" label="home" />
-      <NavEntry link="/team" label="team" />
+      <NavEntry link="/organizers" label="organizers" />
       <NavEntry link="/schedule" label="schedule" />
     </>
   );
@@ -244,7 +244,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<HomeContainer />} />
             <Route path="/schedule" element={<ScheduleRedirect />} />
-            <Route path="/team" element={<TeamContainer />} />
+            <Route path="/organizers" element={<TeamContainer />} />
             <Route path="/privacy" element={<PrivacyPolicyContainer />} />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>

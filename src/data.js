@@ -2,6 +2,11 @@ const config = {
   baseURL: "https://nouturnsign.github.io/icpc-w-btb-website/",
   title: "Break the Binary 2024",
   keywords: "acm,icpc,ucla,competitive,programming", // TODO: add keywords?
+  date: "Saturday, November 16, 2024",
+  time: "8AM - 9PM PT",
+  datetimeLink:
+    "https://www.timeanddate.com/worldclock/fixedtime.html?msg=Break+the+Binary+2024&iso=20241116T08&p1=137&ah=13",
+  isRegistrationOpen: true,
 };
 
 const members = [

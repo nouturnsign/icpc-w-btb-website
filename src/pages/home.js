@@ -1,3 +1,4 @@
+import { ExternalLinkIcon } from "@chakra-ui/icons";
 import {
   Box,
   Button,
@@ -5,14 +6,17 @@ import {
   Flex,
   Heading,
   Image,
+  Link,
+  List,
+  ListItem,
   Stack,
   Text,
 } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
 
 import Container from "components/container";
 import MetaHelmet from "components/metahelmet";
 import Sponsor from "components/sponsor";
+import { config } from "data";
 import { useMediaQuery } from "hooks";
 
 const HomeContainer = () => {
@@ -44,52 +48,68 @@ const HomeContainer = () => {
       </Box>
 
       <Container narrow>
-        <Stack p={3} spacing={3} align="center">
+        <Stack p={3} spacing={3} textAlign="right" marginTop="15px">
           <Heading as="h1" fontSize={["2xl", "3xl"]}>
-            who are we?
+            {config.date}
           </Heading>
-          <Heading as="h2" textAlign="center" fontSize={["md", "lg"]}>
-            algorithmic thinking, problem solving
+          <Heading as="h1" fontSize={["2xl", "3xl"]}>
+            <Link href={config.datetimeLink} isExternal>
+              {config.time}
+              <ExternalLinkIcon mx={1} />
+            </Link>
           </Heading>
-          <Text textAlign="justify" fontSize={["sm", "md"]}>
-            We are a group of problem solvers at heart! ACM ICPC at UCLA is a
-            student-led organization whose mission is to promote algorithmic
-            thinking and help build proficient problem solvers. While we mostly
-            dabble in competitive programming, we have grown to encompass
-            algorithmic and creative thinking in general whether that helps you
-            in answering those challenging coding interview questions or become
-            a smarter and better programmer. We work diligently toward the
-            shared goal of spreading the love of competitive programming and
-            creative thinking to the greater UCLA community. From weekly
-            workshops on competitive programming and technical interview
-            preparation, to our own in-house puzzle hunts and beginner-friendly
-            programming contests, everything we do revolves around the central
-            theme of critical algorithmic thinking.
-          </Text>
-          <Text textalign="center" fontSize={["sm", "md"]}>
-            Click below to find out more about us:
+          <Text textAlign="left" fontSize={["sm", "md"]}>
+            <b>
+              CodeSprint LA is ACM-ICPC at UCLA's annual beginner-friendly
+              algorithms contest.
+            </b>{" "}
+            Teams of up to 3 participants will compete to write programs to
+            solve challenging, out-of-the box algorithms problems, and will be
+            ranked by number of problems solved with ties broken by time.
+            <br />
+            <br />
+            This year there will be a{" "}
+            <b>Team Round with three separate divisions</b>:
+            <List>
+              <ListItem>
+                <b>&gt; Beginner Division</b>: Beginner Division problems are
+                aimed at beginner (including first-time) algorithms contest
+                participants. Only UCLA students who participate in person are
+                eligible for prizes in this division.
+              </ListItem>
+              <ListItem>
+                <b>&gt; High School Division</b>: High School problems are aimed
+                at intermediate to advanced high schoolers with experience in
+                competitive programming. Only high schoolers can participate in
+                this division.
+              </ListItem>
+              <ListItem>
+                <b>&gt; Open Division</b>: Open Division problems should be
+                challenging even for experienced competitors. This year, the
+                open division contests will be held online. Links and details
+                can be found in the schedule document.
+              </ListItem>
+            </List>
+            <br />
+            <b>The prize pool</b> will be a total of <b>$1700</b> USD in
+            Amazon.com gift cards. Beginner Division prizes are for UCLA
+            students only, while Open Division prizes are open to all Open
+            Division participants. There will also be prizes available for top
+            performing high schoolers.
           </Text>
           <Flex wrap="wrap" justify="center" align="center">
-            <Link to="team">
-              <Button m={3} colorScheme="brand" variant="outline">
-                Meet Our Team
-              </Button>
-            </Link>
-            <Link to="icpc">
-              <Button m={3} colorScheme="brand" variant="outline">
-                ICPC Regionals
-              </Button>
-            </Link>
-            <Link
-              to={{
-                pathname: "events",
-                hash: "#all-events",
-              }}
-            >
-              <Button m={3} colorScheme="brand" variant="outline">
-                Learn More About our Events
-              </Button>
-            </Link>
+            {config.isRegistrationOpen && (
+              <Link to="register" target="_blank" rel="noopener noreferrer">
+                <Button
+                  m={3}
+                  fontSize={["1xl", "2xl"]}
+                  variantColor="brand"
+                  variant="outline"
+                >
+                  Register Now!
+                </Button>
+              </Link>
+            )}
           </Flex>
         </Stack>
       </Container>
