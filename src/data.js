@@ -15,19 +15,9 @@ const members = [
     position: "Vice President",
   },
   {
-    image: "rl.JPG",
-    name: "Robert Lee",
-    position: "Advisor, President Emeritus",
-  },
-  {
     image: "sn.JPG",
     name: "Suhas Nagar",
     position: "Advisor, President Emeritus",
-  },
-  {
-    image: "cc.JPG",
-    name: "Carson Cox",
-    position: "Officer",
   },
   {
     image: "is.JPG",
@@ -37,16 +27,6 @@ const members = [
   {
     image: "jh.JPG",
     name: "Jason Huang",
-    position: "Officer",
-  },
-  {
-    image: "ad.JPG",
-    name: "Arvin Ding",
-    position: "Officer",
-  },
-  {
-    image: "snal.JPG",
-    name: "Sumith Nalabolu",
     position: "Officer",
   },
   {
