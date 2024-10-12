@@ -54,11 +54,13 @@ const MenuContent = () => {
     <>
       <NavEntry link="/" label="home" />
       <NavEntry link="/organizers" label="organizers" />
-      <NavEntry link="/schedule" label="schedule" isExternal />
-      {config.isRegistrationOpen && (
+      {config.isSchedulePublished && (
+        <NavEntry link="/schedule" label="schedule" isExternal />
+      )}
+      {config.isRegistrationPublished && (
         <NavEntry link="/register" label="register" isExternal />
       )}
-      {config.isInterestOpen && (
+      {config.isInterestPublished && (
         <NavEntry link="/interest" label="interest" isExternal />
       )}
     </>

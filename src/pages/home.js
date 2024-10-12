@@ -80,13 +80,13 @@ const HomeContainer = () => {
             champion inclusivity with us! ✨
           </Text>
           <Flex wrap="wrap" justify="center" align="center">
-            {config.isInterestOpen && (
+            {config.isInterestPublished && (
               <EmphasisLinkButton
                 url={config.interestLink}
                 text="Interest Form"
               />
             )}
-            {config.isRegistrationOpen && (
+            {config.isRegistrationPublished && (
               <EmphasisLinkButton
                 url={config.registerLink}
                 text="Register Now!"
