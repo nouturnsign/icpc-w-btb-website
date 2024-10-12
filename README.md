@@ -1,5 +1,8 @@
 # ACM ICPC & W Break the Binary Website
 
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
+[![GitHub Pages Status](https://github.com/nouturnsign/icpc-w-btb-website/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/nouturnsign/icpc-w-btb-website/actions/workflows/pages/pages-build-deployment)
+
 Official Website for ACM ICPC & W Break the Binary.
 
 Built using React. Uses [Chakra-UI](https://chakra-ui.com/) for components. Uses
