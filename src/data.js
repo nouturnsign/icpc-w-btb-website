@@ -87,7 +87,7 @@ const members = [
     position: "Officer",
   },
   {
-    image: "ms.JPG",
+    image: "ms.jpg",
     name: "Michael Song",
     position: "Officer",
   },
