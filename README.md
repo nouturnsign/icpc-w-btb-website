@@ -2,6 +2,7 @@
 
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
 [![GitHub Pages Status](https://github.com/nouturnsign/icpc-w-btb-website/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/nouturnsign/icpc-w-btb-website/actions/workflows/pages/pages-build-deployment)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://prettier.io/)
 
 Official Website for ACM ICPC & W Break the Binary.
 
