@@ -14,7 +14,7 @@ for an example for hosting single pages apps on GitHub pages.
 ## Setup
 
 Install [`git`](https://git-scm.com/downloads) and
-[Node.js](https://nodejs.org/en) version `22.9.0`.
+[Node.js](https://nodejs.org/en).
 
 Clone the repository:
 
@@ -24,7 +24,7 @@ cd icpc-w-btb-website
 ```
 
 We recommend using [`nvm`](https://github.com/nvm-sh/nvm) to manage Node.js
-versions. An `.nvmrc` has already been provided.
+versions. An `.nvmrc` has already been provided (version `22.9.0`).
 
 ```sh
 nvm use
