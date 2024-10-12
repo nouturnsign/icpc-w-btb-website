@@ -1,11 +1,11 @@
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import {
   Box,
-  Divider,
   Flex,
   Heading,
   Image,
   Link,
+  SimpleGrid,
   Stack,
   Text,
 } from "@chakra-ui/react";
@@ -45,90 +45,122 @@ const HomeContainer = () => {
         )}
       </Box>
 
-      <Container narrow>
-        <Stack p={3} spacing={3} textAlign="right" marginTop="15px">
-          <Heading as="h1" fontSize={["2xl", "3xl"]}>
-            {config.date}
-          </Heading>
-          <Heading as="h1" fontSize={["2xl", "3xl"]}>
-            <Link href={config.datetimeLink} isExternal>
-              {config.time}
-              <ExternalLinkIcon mx={1} />
-            </Link>
-          </Heading>
-          <Text textAlign="left" fontSize={["sm", "md"]}>
-            <b>
-              HEY THERE! Do you love Tom Holland and Zendaya? Do you love
-              solving puzzles and winning prizes? If so:
-            </b>
-            <br />
-            🌟🚀🔥 ACM ICPC and ACM W proudly present Break the Binary: Across
-            the Spider-Verse! 🕸️🕷️
-            <br />
-            <br />
-            Swing into action with this Spider-Man-themed problem-solving
-            extravaganza💫, inspired by everyone's favorite web-slinger. Get
-            ready for a day packed with coding challenges 💻💥 and
-            multiverse-inspired puzzles 🧩 that will have you thinking like
-            Miles Morales in no time! You’ll also have the chance to win cash
-            💵, mystery Spider-Verse prizes, and enjoy free food!
-            <br />
-            <br />
-            At Break the Binary, we’re breaking down barriers just like Spidey
-            busts through villains 🕷️⚡. Whether you're a seasoned coder or a
-            beginner, this is your chance to be a hero, web up some code, and
-            champion inclusivity with us! ✨
-          </Text>
-          <Flex wrap="wrap" justify="center" align="center">
-            {config.isInterestPublished && (
-              <EmphasisLinkButton
-                url={config.interestLink}
-                text="Interest Form"
+      <Stack spacing={0} textAlign="right">
+        <Box backgroundColor="brand.100">
+          <Container narrow my>
+            <Heading as="h1" fontSize={["2xl", "3xl"]}>
+              {config.date}
+            </Heading>
+            <Heading as="h1" fontSize={["2xl", "3xl"]}>
+              <Link href={config.datetimeLink} isExternal>
+                {config.time}
+                <ExternalLinkIcon mx={1} />
+              </Link>
+            </Heading>
+
+            <Text textAlign="left" fontSize={["sm", "md"]} mx={10}>
+              <Heading>HEY THERE!</Heading>
+              Do you love Tom Holland and Zendaya? Do you love solving puzzles
+              and winning prizes? If so:
+              <br />
+              🌟🚀🔥 ACM ICPC and ACM W proudly present{" "}
+              <b> Break the Binary: Across the Spider-Verse! </b> 🕸️🕷️
+            </Text>
+
+            <Flex wrap="wrap" justify="center" align="center">
+              {config.isInterestPublished && (
+                <EmphasisLinkButton
+                  url={config.interestLink}
+                  text="Interest Form"
+                />
+              )}
+              {config.isRegistrationPublished && (
+                <EmphasisLinkButton
+                  url={config.registerLink}
+                  text="Register Now!"
+                />
+              )}
+            </Flex>
+          </Container>
+        </Box>
+
+        <Box backgroundColor="brand.50">
+          <Container narrow my>
+            <SimpleGrid columns={2} spacing={10}>
+              <Text textAlign="left" fontSize={["sm", "md"]}>
+                <Heading>Puzzle Hunt!</Heading>
+                <br />
+                Swing into action with this Spider-Man-themed problem-solving
+                extravaganza💫, inspired by everyone's favorite web-slinger. Get
+                ready for a day packed with coding challenges 💻💥 and
+                multiverse-inspired puzzles 🧩 that will have you thinking like
+                Miles Morales in no time! You’ll also have the chance to win
+                cash 💵, mystery Spider-Verse prizes, and enjoy free food!
+              </Text>
+              <Image
+                src={process.env.PUBLIC_URL + "/assets/photos/solving.jpg"}
+                alt="Three gruops of students are solving puzzles at Break the
+                  Binary. There are three to five students per group, and they
+                  appear to be thinking."
               />
-            )}
-            {config.isRegistrationPublished && (
-              <EmphasisLinkButton
-                url={config.registerLink}
-                text="Register Now!"
+            </SimpleGrid>
+          </Container>
+        </Box>
+
+        <Box backgroundColor="brand.100">
+          <Container narrow my>
+            <SimpleGrid columns={2} spacing={10}>
+              <Image
+                src={process.env.PUBLIC_URL + "/assets/photos/panel.jpg"}
+                alt="Students sit at tables enjoying lunch while panelists
+                  including Dr. Smallberg answer questions."
               />
-            )}
-          </Flex>
-        </Stack>
-      </Container>
+              <Text textAlign="left" fontSize={["sm", "md"]}>
+                <Heading>Networking</Heading>
+                <br />
+                At Break the Binary, we're breaking down barriers just like
+                Spidey busts through villains 🕷️⚡. Whether you're a seasoned
+                coder or a beginner, this is your chance to be a hero, web up
+                some code, and champion inclusivity with us! ✨
+              </Text>
+            </SimpleGrid>
+          </Container>
+        </Box>
 
-      <Divider p={3} borderColor="brand.500" />
+        <Box backgroundColor="brand.50">
+          <Container narrow my>
+            <Stack p={3} spacing={3} align="center">
+              <Heading as="h1">Schedule</Heading>
+              <Schedule fontSize={["md", "lg"]} />
+            </Stack>
+          </Container>
+        </Box>
 
-      <Container narrow>
-        <Stack p={3} spacing={3} align="center">
-          <Heading as="h1">Schedule</Heading>
-          <Schedule fontSize={["md", "lg"]} />
-        </Stack>
-      </Container>
-
-      <Divider p={3} borderColor="brand.500" />
-
-      <Container narrow>
-        <Stack p={3} spacing={3} textAlign="center" align="center">
-          <Heading as="p">Sponsored by</Heading>
-          <Flex
-            alignItems="center"
-            justifyContent="space-between"
-            direction="row"
-            maxWidth={isMobile ? null : "850px"}
-            wrap="wrap"
-          >
-            <Sponsor
-              sponsor_name="Jane Street"
-              external_link="https://www.janestreet.com/"
-              img_src={
-                process.env.PUBLIC_URL +
-                "/assets/sponsors/Jane_Street_Capital_Logo.svg"
-              }
-            />
-          </Flex>
-        </Stack>
-        <br />
-      </Container>
+        <Box backgroundColor="brand.100">
+          <Container narrow my>
+            <Stack p={3} spacing={3} textAlign="center" align="center">
+              <Heading as="p">Sponsored by</Heading>
+              <Flex
+                alignItems="center"
+                justifyContent="space-between"
+                direction="row"
+                maxWidth={isMobile ? null : "850px"}
+                wrap="wrap"
+              >
+                <Sponsor
+                  sponsor_name="Jane Street"
+                  external_link="https://www.janestreet.com/"
+                  img_src={
+                    process.env.PUBLIC_URL +
+                    "/assets/sponsors/Jane_Street_Capital_Logo.svg"
+                  }
+                />
+              </Flex>
+            </Stack>
+            <br />
+          </Container>
+        </Box>
+      </Stack>
     </div>
   );
 };
