@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# ACM ICPC & W Break the Binary Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Official Website for ACM ICPC & W Break the Binary.
 
-## Available Scripts
+Built using React. Uses [Chakra-UI](https://chakra-ui.com/) for components. Uses
+GitHub pages for deployment; see
+[`spa-github-pages`](https://github.com/rafgraph/spa-github-pages/tree/gh-pages)
+for an example for hosting single pages apps on GitHub pages.
 
-In the project directory, you can run:
+## Setup
 
-### `npm start`
+Install [`git`](https://git-scm.com/downloads) and
+[Node.js](https://nodejs.org/en) version `22.9.0`.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+We recommend using [`nvm`](https://github.com/nvm-sh/nvm) to manage Node.js
+versions. An `.nvmrc` has already been provided.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```sh
+nvm use
+```
 
-### `npm test`
+Clone the repository and install dependencies:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```sh
+git clone https://github.com/nouturnsign/icpc-w-btb-website
+cd icpc-w-btb-website
+npm ci
+```
 
-### `npm run build`
+In `icpc-w-btb-website` directory, run:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```sh
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This will start the development server on `http://localhost:3000`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Deployment
 
-### `npm run eject`
+Use `npm run deploy` to build and deploy.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Contributing
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Follow the [Code of conduct](/CODE_OF_CONDUCT.md).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Create branches and submit a pull requests. Please use
+[`prettier`](https://prettier.io/) for code formatting. Respect
+[`.editorconfig`](https://editorconfig.org/) rules.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you are using Visual Studio Code, install the recommended extensions, and
+format on save.
