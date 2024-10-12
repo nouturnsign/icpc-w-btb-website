@@ -1,7 +1,8 @@
+import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { Button } from "@chakra-ui/react";
 import { NavLink } from "react-router-dom";
 
-const NavEntry = ({ link, label }) => {
+const NavEntry = ({ link, label, isExternal = false }) => {
   return (
     <NavLink
       to={link}
@@ -17,6 +18,7 @@ const NavEntry = ({ link, label }) => {
         _hover={{ color: "brand.500" }}
       >
         {label}
+        {isExternal && <ExternalLinkIcon mx={1} />}
       </Button>
     </NavLink>
   );

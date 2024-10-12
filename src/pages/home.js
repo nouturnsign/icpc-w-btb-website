@@ -6,8 +6,6 @@ import {
   Heading,
   Image,
   Link,
-  List,
-  ListItem,
   Stack,
   Text,
 } from "@chakra-ui/react";
@@ -15,6 +13,7 @@ import {
 import Container from "components/container";
 import EmphasisLinkButton from "components/emphasislinkbutton";
 import MetaHelmet from "components/metahelmet";
+import Schedule from "components/schedule";
 import Sponsor from "components/sponsor";
 import { config } from "data";
 import { useMediaQuery } from "hooks";
@@ -22,17 +21,16 @@ import { useMediaQuery } from "hooks";
 const HomeContainer = () => {
   const isMobile = !useMediaQuery("(min-width: 768px)");
 
-  // TODO: descriptions
   return (
     <div className="home">
-      <MetaHelmet description="Description" />
+      <MetaHelmet description="Break the Binary: ACM ICPC and ACM W's problem-solving extravaganza!" />
       <Box bg="#FCEDF3">
         {!isMobile && (
           <Image
             mx="auto"
             objectFit="fit"
             src={process.env.PUBLIC_URL + "/static/banner.png"}
-            alt="ICPC Banner"
+            alt="Break the Binary Banner"
             maxHeight="500px"
           />
         )}
@@ -41,7 +39,7 @@ const HomeContainer = () => {
             mx="auto"
             objectFit="fit"
             src={process.env.PUBLIC_URL + "/static/banner-mobile.png"}
-            alt="ICPC Banner"
+            alt="Break the Binary Banner"
             width="100%"
           />
         )}
@@ -60,42 +58,26 @@ const HomeContainer = () => {
           </Heading>
           <Text textAlign="left" fontSize={["sm", "md"]}>
             <b>
-              CodeSprint LA is ACM-ICPC at UCLA's annual beginner-friendly
-              algorithms contest.
-            </b>{" "}
-            Teams of up to 3 participants will compete to write programs to
-            solve challenging, out-of-the box algorithms problems, and will be
-            ranked by number of problems solved with ties broken by time.
+              HEY THERE! Do you love Tom Holland and Zendaya? Do you love
+              solving puzzles and winning prizes? If so:
+            </b>
+            <br />
+            🌟🚀🔥 ACM ICPC and ACM W proudly present Break the Binary: Across
+            the Spider-Verse! 🕸️🕷️
             <br />
             <br />
-            This year there will be a{" "}
-            <b>Team Round with three separate divisions</b>:
-            <List>
-              <ListItem>
-                <b>&gt; Beginner Division</b>: Beginner Division problems are
-                aimed at beginner (including first-time) algorithms contest
-                participants. Only UCLA students who participate in person are
-                eligible for prizes in this division.
-              </ListItem>
-              <ListItem>
-                <b>&gt; High School Division</b>: High School problems are aimed
-                at intermediate to advanced high schoolers with experience in
-                competitive programming. Only high schoolers can participate in
-                this division.
-              </ListItem>
-              <ListItem>
-                <b>&gt; Open Division</b>: Open Division problems should be
-                challenging even for experienced competitors. This year, the
-                open division contests will be held online. Links and details
-                can be found in the schedule document.
-              </ListItem>
-            </List>
+            Swing into action with this Spider-Man-themed problem-solving
+            extravaganza💫, inspired by everyone's favorite web-slinger. Get
+            ready for a day packed with coding challenges 💻💥 and
+            multiverse-inspired puzzles 🧩 that will have you thinking like
+            Miles Morales in no time! You’ll also have the chance to win cash
+            💵, mystery Spider-Verse prizes, and enjoy free food!
             <br />
-            <b>The prize pool</b> will be a total of <b>$1700</b> USD in
-            Amazon.com gift cards. Beginner Division prizes are for UCLA
-            students only, while Open Division prizes are open to all Open
-            Division participants. There will also be prizes available for top
-            performing high schoolers.
+            <br />
+            At Break the Binary, we’re breaking down barriers just like Spidey
+            busts through villains 🕷️⚡. Whether you're a seasoned coder or a
+            beginner, this is your chance to be a hero, web up some code, and
+            champion inclusivity with us! ✨
           </Text>
           <Flex wrap="wrap" justify="center" align="center">
             {config.isInterestOpen && (
@@ -111,6 +93,15 @@ const HomeContainer = () => {
               />
             )}
           </Flex>
+        </Stack>
+      </Container>
+
+      <Divider p={3} borderColor="brand.500" />
+
+      <Container narrow>
+        <Stack p={3} spacing={3} align="center">
+          <Heading as="h1">Schedule</Heading>
+          <Schedule fontSize={["md", "lg"]} />
         </Stack>
       </Container>
 
