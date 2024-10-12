@@ -45,8 +45,8 @@ const HomeContainer = () => {
         )}
       </Box>
 
-      <Stack spacing={0} textAlign="right">
-        <Box backgroundColor="brand.100">
+      <Stack spacing={0} textAlign="left">
+        <Box backgroundColor="brand.100" textAlign="right">
           <Container narrow my>
             <Heading as="h1" fontSize={["2xl", "3xl"]}>
               {config.date}
