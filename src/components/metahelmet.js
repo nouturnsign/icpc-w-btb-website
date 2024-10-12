@@ -13,7 +13,7 @@ const MetaHelmet = ({ description }) => {
       <meta property="og:url" content={config.baseURL} />
       <meta
         property="og:image"
-        content={config.baseURL + "static/icon/logo256.png"}
+        content={config.baseURL + "assets/icon/logo256.png"}
       />
       <meta property="og:site_name" content={config.title} />
     </Helmet>

@@ -29,7 +29,7 @@ const HomeContainer = () => {
           <Image
             mx="auto"
             objectFit="fit"
-            src={process.env.PUBLIC_URL + "/static/banner.png"}
+            src={process.env.PUBLIC_URL + "/assets/banner.png"}
             alt="Break the Binary Banner"
             maxHeight="500px"
           />
@@ -38,7 +38,7 @@ const HomeContainer = () => {
           <Image
             mx="auto"
             objectFit="fit"
-            src={process.env.PUBLIC_URL + "/static/banner-mobile.png"}
+            src={process.env.PUBLIC_URL + "/assets/banner-mobile.png"}
             alt="Break the Binary Banner"
             width="100%"
           />
@@ -122,7 +122,7 @@ const HomeContainer = () => {
               external_link="https://www.janestreet.com/"
               img_src={
                 process.env.PUBLIC_URL +
-                "/static/sponsors/Jane_Street_Capital_Logo.svg"
+                "/assets/sponsors/Jane_Street_Capital_Logo.svg"
               }
             />
           </Flex>

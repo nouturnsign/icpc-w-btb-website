@@ -34,7 +34,7 @@ const AllMembers = () => {
                 <Image
                   boxSize="128px"
                   src={
-                    process.env.PUBLIC_URL + "/static/member/" + member.image
+                    process.env.PUBLIC_URL + "/assets/member/" + member.image
                   }
                   rounded="50%"
                 />
