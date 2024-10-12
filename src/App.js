@@ -88,7 +88,7 @@ const Navbar = () => {
           <NavLink to="https://icpc.uclaacm.com/" target="_blank">
             <Image
               h="32px"
-              src={process.env.PUBLIC_URL + "/assets/icon/acmicpc.svg"}
+              src={process.env.PUBLIC_URL + "/assets/branding/acmicpc.svg"}
               alt="ACM ICPC Logo"
             />
           </NavLink>
@@ -96,7 +96,7 @@ const Navbar = () => {
           <NavLink to="https://w.uclaacm.com/" target="_blank">
             <Image
               h="32px"
-              src={process.env.PUBLIC_URL + "/assets/icon/acmw.svg"}
+              src={process.env.PUBLIC_URL + "/assets/branding/acmw.svg"}
               alt="ACM W Logo"
             />
           </NavLink>
