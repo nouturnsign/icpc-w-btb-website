@@ -16,22 +16,23 @@ for an example for hosting single pages apps on GitHub pages.
 Install [`git`](https://git-scm.com/downloads) and
 [Node.js](https://nodejs.org/en) version `22.9.0`.
 
+Clone the repository:
+
+```sh
+git clone https://github.com/nouturnsign/icpc-w-btb-website
+cd icpc-w-btb-website
+```
+
 We recommend using [`nvm`](https://github.com/nvm-sh/nvm) to manage Node.js
 versions. An `.nvmrc` has already been provided.
 
 ```sh
 nvm use
-```
-
-Clone the repository and install dependencies:
-
-```sh
-git clone https://github.com/nouturnsign/icpc-w-btb-website
-cd icpc-w-btb-website
 npm ci
 ```
 
-In `icpc-w-btb-website` directory, run:
+To start the development server, run the following in the `icpc-w-btb-website`
+directory:
 
 ```sh
 npm start
