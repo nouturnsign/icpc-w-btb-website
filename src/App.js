@@ -15,6 +15,7 @@ import {
   SimpleGrid,
   Stack,
   Text,
+  useBreakpointValue,
   useDisclosure,
 } from "@chakra-ui/react";
 import React, { Suspense } from "react";
@@ -29,11 +30,10 @@ import { NavLink, Navigate, Route, Routes } from "react-router-dom";
 
 import Container from "components/container";
 import NavEntry from "components/naventry";
-import { useMediaQuery } from "hooks";
+import { config } from "data";
 import HomeContainer from "pages/home";
 import PrivacyPolicyContainer from "pages/privacy";
 import TeamContainer from "pages/team";
-import { config } from "data";
 
 const FallbackView = <h1>Loading</h1>;
 
@@ -70,7 +70,7 @@ const MenuContent = () => {
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
-  const isMobile = !useMediaQuery("(min-width: 768px)");
+  const isMobile = useBreakpointValue({ base: true, md: false });
 
   return (
     <Box

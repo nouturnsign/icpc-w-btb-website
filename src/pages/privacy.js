@@ -12,7 +12,7 @@ import {
 import Container from "components/container";
 import MetaHelmet from "components/metahelmet";
 
-const PrivacyPolicyContainer = (props) => (
+const PrivacyPolicyContainer = () => (
   <div className="regionals">
     <MetaHelmet description="Privacy policy." />
     <Container narrow>

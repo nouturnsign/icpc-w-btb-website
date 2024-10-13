@@ -5,21 +5,21 @@ import {
   Heading,
   Image,
   Link,
-  SimpleGrid,
   Stack,
   Text,
+  useBreakpointValue,
 } from "@chakra-ui/react";
 
 import Container from "components/container";
 import EmphasisLinkButton from "components/emphasislinkbutton";
 import MetaHelmet from "components/metahelmet";
+import ResponsiveTwoColumns from "components/responsivetwocolumns";
 import Schedule from "components/schedule";
 import Sponsor from "components/sponsor";
 import { config } from "data";
-import { useMediaQuery } from "hooks";
 
 const HomeContainer = () => {
-  const isMobile = !useMediaQuery("(min-width: 768px)");
+  const isMobile = useBreakpointValue({ base: true, md: false });
 
   return (
     <div className="home">
@@ -86,7 +86,12 @@ const HomeContainer = () => {
 
         <Box backgroundColor="brand.50">
           <Container narrow my>
-            <SimpleGrid columns={2} spacing={10}>
+            <ResponsiveTwoColumns
+              imgSrc={process.env.PUBLIC_URL + "/assets/photos/solving.jpg"}
+              imgAlt="Three gruops of students are solving puzzles at Break the
+                  Binary. There are three to five students per group, and they
+                  appear to be thinking."
+            >
               <Text textAlign="left" fontSize={["sm", "md"]}>
                 <Heading>Puzzle Hunt!</Heading>
                 <br />
@@ -97,24 +102,18 @@ const HomeContainer = () => {
                 Miles Morales in no time! You’ll also have the chance to win
                 cash 💵, mystery Spider-Verse prizes, and enjoy free food!
               </Text>
-              <Image
-                src={process.env.PUBLIC_URL + "/assets/photos/solving.jpg"}
-                alt="Three gruops of students are solving puzzles at Break the
-                  Binary. There are three to five students per group, and they
-                  appear to be thinking."
-              />
-            </SimpleGrid>
+            </ResponsiveTwoColumns>
           </Container>
         </Box>
 
         <Box backgroundColor="brand.100">
           <Container narrow my>
-            <SimpleGrid columns={2} spacing={10}>
-              <Image
-                src={process.env.PUBLIC_URL + "/assets/photos/panel.jpg"}
-                alt="Students sit at tables enjoying lunch while panelists
+            <ResponsiveTwoColumns
+              imgSrc={process.env.PUBLIC_URL + "/assets/photos/panel.jpg"}
+              imgAlt="Students sit at tables enjoying lunch while panelists
                   including Dr. Smallberg answer questions."
-              />
+              reverse
+            >
               <Text textAlign="left" fontSize={["sm", "md"]}>
                 <Heading>Networking</Heading>
                 <br />
@@ -123,7 +122,7 @@ const HomeContainer = () => {
                 coder or a beginner, this is your chance to be a hero, web up
                 some code, and champion inclusivity with us! ✨
               </Text>
-            </SimpleGrid>
+            </ResponsiveTwoColumns>
           </Container>
         </Box>
 
