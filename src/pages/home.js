@@ -88,7 +88,7 @@ const HomeContainer = () => {
           <Container narrow my>
             <ResponsiveTwoColumns
               imgSrc={process.env.PUBLIC_URL + "/assets/photos/solving.jpg"}
-              imgAlt="Three gruops of students are solving puzzles at Break the
+              imgAlt="Three groups of students are solving puzzles at Break the
                   Binary. There are three to five students per group, and they
                   appear to be thinking."
             >
