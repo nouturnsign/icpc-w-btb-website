@@ -35,6 +35,7 @@ import { config } from "data";
 import HomeContainer from "pages/home";
 import PrivacyPolicyContainer from "pages/privacy";
 import TeamContainer from "pages/team";
+import PuzzleContainer from "pages/puzzle";
 
 const FallbackView = <h1>Loading</h1>;
 
@@ -58,6 +59,7 @@ const MenuContent = () => {
       {config.isSchedulePublished && (
         <NavEntry link={config.scheduleLink} label="schedule" isExternal />
       )}
+      {config.isPuzzlePublished && <NavEntry link="/puzzle" label="puzzles" />}
       {config.isRegistrationPublished && (
         <NavEntry link={config.registerLink} label="register" isExternal />
       )}
@@ -83,7 +85,7 @@ const Navbar = () => {
       position="fixed"
       width="100vw"
       borderBottom="2px"
-      borderColor="brand.500"
+      borderColor="black"
       zIndex={9999}
     >
       <Container>
@@ -265,6 +267,7 @@ const App = () => {
             <Route path="/schedule" element={<ScheduleRedirect />} />
             <Route path="/organizers" element={<TeamContainer />} />
             <Route path="/privacy" element={<PrivacyPolicyContainer />} />
+            <Route path="/puzzle" element={<PuzzleContainer />} />
             <Route path="/interest" element={<InterestRedirect />} />
             <Route path="/register" element={<RegisterRedirect />} />
             <Route path="*" element={<Navigate to="/" />} />
