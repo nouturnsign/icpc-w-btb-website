@@ -42,6 +42,18 @@ const PuzzleContainer = () => {
             <Heading as="h2" textAlign="left" py={4}>
               Act II: Gathering the Team
             </Heading>
+            <Stack direction={["column", "row"]}>
+              <PuzzleLink
+                url="https://www.jigsawexplorer.com/"
+                label="Puzzle 3"
+                description="Description 3"
+              />
+              <PuzzleLink
+                url="https://www.jigsawexplorer.com/"
+                label="Puzzle 4"
+                description="Description 4"
+              />
+            </Stack>
           </Container>
         </Box>
 
@@ -50,6 +62,18 @@ const PuzzleContainer = () => {
             <Heading as="h2" textAlign="left" py={4}>
               Act III: The Final Battle
             </Heading>
+            <Stack direction={["column", "row"]}>
+              <PuzzleLink
+                url="https://www.jigsawexplorer.com/"
+                label="Puzzle 5"
+                description="Description 5"
+              />
+              <PuzzleLink
+                url="https://www.jigsawexplorer.com/"
+                label="Puzzle 6"
+                description="Description 6"
+              />
+            </Stack>
           </Container>
         </Box>
       </Stack>
