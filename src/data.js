@@ -31,17 +31,17 @@ const icpc_btb_members = [
 
 const w_btb_members = [
   {
-    image: "default.jpg",
+    image: "default.png",
     name: "Anmol Gupta",
     position: "W Officer",
   },
   {
-    image: "default.jpg",
+    image: "default.png",
     name: "Serena Kim",
     position: "W Officer",
   },
   {
-    image: "default.jpg",
+    image: "default.png",
     name: "Emily Lu",
     position: "W Officer",
   },
@@ -127,64 +127,64 @@ const icpc_members = [
 
 const w_members = [
   {
-    image: "default.jpg",
+    image: "default.png",
     name: "Nemi Desai",
     position: "Co-President",
   },
   {
-    image: "default.jpg",
+    image: "default.png",
     name: "Sananshi Pidyar",
     position: "Co-President",
   },
   {
-    image: "default.jpg",
+    image: "default.png",
     name: "Evy Nguyen",
     position: "Advisor, President Emeritus",
   },
-  { image: "default.jpg", name: "Claire Li", position: "Officer" },
+  { image: "default.png", name: "Claire Li", position: "Officer" },
   {
-    image: "default.jpg",
+    image: "default.png",
     name: "Rachel Young",
     position: "Officer",
   },
   {
-    image: "default.jpg",
+    image: "default.png",
     name: "Kaitlyn Wu",
     position: "Officer",
   },
   {
-    image: "default.jpg",
+    image: "default.png",
     name: "Megan Jacob",
     position: "Officer",
   },
   {
-    image: "default.jpg",
+    image: "default.png",
     name: "Jessica Guan",
     position: "Officer",
   },
   {
-    image: "default.jpg",
+    image: "default.png",
     name: "Aria Sikdar",
     position: "Officer",
   },
   {
-    image: "default.jpg",
+    image: "default.png",
     name: "Stella Kang",
     position: "Officer",
   },
   {
-    image: "default.jpg",
+    image: "default.png",
     name: "Michelle Lee",
     position: "Officer",
   },
   {
-    image: "default.jpg",
+    image: "default.png",
     name: "Meena Annamalai",
     position: "Officer",
   },
-  { image: "default.jpg", name: "Ria Kundu", position: "Officer" },
+  { image: "default.png", name: "Ria Kundu", position: "Officer" },
   {
-    image: "default.jpg",
+    image: "default.png",
     name: "Elaine Guan",
     position: "Officer",
   },
