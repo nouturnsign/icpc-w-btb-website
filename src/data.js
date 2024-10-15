@@ -16,7 +16,7 @@ const config = {
     "https://docs.google.com/forms/d/e/1FAIpQLSfGJIQRcJR0yAQzoLVhQqd9Db74COT8_vH-gvaDO5lK9TQwOg/viewform",
 };
 
-const btb_members = [
+const icpc_btb_members = [
   {
     image: "hz.jpg",
     name: "Harry Zhou",
@@ -28,6 +28,27 @@ const btb_members = [
     name: "Jason Liu",
     position: "Vice President",
     icpc: true,
+  },
+];
+
+const w_btb_members = [
+  {
+    image: "default.jpg",
+    name: "Anmol Gupta",
+    position: "W Officer",
+    icpc: false,
+  },
+  {
+    image: "default.jpg",
+    name: "Serena Kim",
+    position: "W Officer",
+    icpc: false,
+  },
+  {
+    image: "default.jpg",
+    name: "Emily Lu",
+    position: "W Officer",
+    icpc: false,
   },
 ];
 
@@ -124,6 +145,81 @@ const icpc_members = [
   },
 ];
 
-const w_members = []; // TODO: add w members
+const w_members = [
+  {
+    image: "default.jpg",
+    name: "Nemi Desai",
+    position: "Co-President",
+    icpc: false,
+  },
+  {
+    image: "default.jpg",
+    name: "Sananshi Pidyar",
+    position: "Co-President",
+    icpc: false,
+  },
+  {
+    image: "default.jpg",
+    name: "Evy Nguyen",
+    position: "Advisor, President Emeritus",
+    icpc: false,
+  },
+  { image: "default.jpg", name: "Claire Li", position: "Officer", icpc: false },
+  {
+    image: "default.jpg",
+    name: "Rachel Young",
+    position: "Officer",
+    icpc: false,
+  },
+  {
+    image: "default.jpg",
+    name: "Kaitlyn Wu",
+    position: "Officer",
+    icpc: false,
+  },
+  {
+    image: "default.jpg",
+    name: "Megan Jacob",
+    position: "Officer",
+    icpc: false,
+  },
+  {
+    image: "default.jpg",
+    name: "Jessica Guan",
+    position: "Officer",
+    icpc: false,
+  },
+  {
+    image: "default.jpg",
+    name: "Aria Sikdar",
+    position: "Officer",
+    icpc: false,
+  },
+  {
+    image: "default.jpg",
+    name: "Stella Kang",
+    position: "Officer",
+    icpc: false,
+  },
+  {
+    image: "default.jpg",
+    name: "Michelle Lee",
+    position: "Officer",
+    icpc: false,
+  },
+  {
+    image: "default.jpg",
+    name: "Meena Annamalai",
+    position: "Officer",
+    icpc: false,
+  },
+  { image: "default.jpg", name: "Ria Kundu", position: "Officer", icpc: false },
+  {
+    image: "default.jpg",
+    name: "Elaine Guan",
+    position: "Officer",
+    icpc: false,
+  },
+];
 
-export { config, btb_members, icpc_members, w_members };
+export { config, icpc_btb_members, w_btb_members, icpc_members, w_members };

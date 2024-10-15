@@ -1,9 +1,9 @@
-import { Box, Heading, SimpleGrid } from "@chakra-ui/react";
+import { Box, Heading, SimpleGrid, Stack } from "@chakra-ui/react";
 
 import AllMembers from "components/allmembers";
 import Container from "components/container";
 import MetaHelmet from "components/metahelmet";
-import { btb_members, icpc_members, w_members } from "data";
+import { icpc_btb_members, w_btb_members, icpc_members, w_members } from "data";
 
 const TeamContainer = () => (
   <div className="team">
@@ -13,7 +13,10 @@ const TeamContainer = () => (
         Break the Binary Directors
       </Heading>
 
-      <AllMembers membersData={btb_members} />
+      <Stack direction="column">
+        <AllMembers membersData={icpc_btb_members} />
+        <AllMembers membersData={w_btb_members} />
+      </Stack>
 
       <SimpleGrid columns={2}>
         <Box>
