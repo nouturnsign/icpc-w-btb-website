@@ -10,11 +10,15 @@ const OneMember = ({ member, borderColor, index }) => {
             rounded="50%"
             borderColor={borderColor}
             borderWidth="8px"
+            overflow="hidden"
           >
             <Image
               boxSize="128px"
               src={process.env.PUBLIC_URL + "/assets/member/" + member.image}
               rounded="50%"
+              objectFit="cover"
+              w="100%"
+              h="100%"
             />
           </Box>
         </AspectRatio>
