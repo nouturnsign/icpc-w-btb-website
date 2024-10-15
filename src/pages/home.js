@@ -59,10 +59,6 @@ const HomeContainer = () => {
             </Heading>
 
             <Text textAlign="left" fontSize={["sm", "md"]} mx={10}>
-              <Heading>HEY THERE!</Heading>
-              Do you love Tom Holland and Zendaya? Do you love solving puzzles
-              and winning prizes? If so:
-              <br />
               🌟🚀🔥 ACM ICPC and ACM W proudly present{" "}
               <b> Break the Binary: Across the Spider-Verse! </b> 🕸️🕷️
             </Text>
@@ -99,8 +95,12 @@ const HomeContainer = () => {
                 extravaganza💫, inspired by everyone's favorite web-slinger. Get
                 ready for a day packed with coding challenges 💻💥 and
                 multiverse-inspired puzzles 🧩 that will have you thinking like
-                Miles Morales in no time! You’ll also have the chance to win
-                cash 💵, mystery Spider-Verse prizes, and enjoy free food!
+                Miles Morales in no time!
+                <br />
+                <br />
+                Want to get a feel for the types of puzzles you'll encounter? 🧩
+                Try out a few sample puzzles to warm up your mind 🧩 and get
+                ready for the challenge! 💪🎯
               </Text>
             </ResponsiveTwoColumns>
           </Container>
@@ -117,16 +117,36 @@ const HomeContainer = () => {
               <Text textAlign="left" fontSize={["sm", "md"]}>
                 <Heading>Networking</Heading>
                 <br />
-                At Break the Binary, we're breaking down barriers just like
-                Spidey busts through villains 🕷️⚡. Whether you're a seasoned
-                coder or a beginner, this is your chance to be a hero, web up
-                some code, and champion inclusivity with us! ✨
+                At Break the Binary, we're tearing down barriers just like
+                Spidey takes down villains 🕷️⚡. Whether you're a seasoned coder
+                💻 or just starting out 🚀, this is your chance to be a hero 🦸‍♂️,
+                spin some code 🕸️, and champion inclusivity with us! ✨ Join us
+                for an inspiring fireside chat 🔥 and networking session 🤝 with
+                amazing professors 👩‍🏫👨‍🏫 and industry professionals 👩‍💼👨‍💼.
               </Text>
             </ResponsiveTwoColumns>
           </Container>
         </Box>
 
         <Box backgroundColor="brand.50">
+          <Container narrow my>
+            <ResponsiveTwoColumns
+              imgSrc={process.env.PUBLIC_URL + "/assets/photos/group.jpg"}
+              imgAlt="The participants of Break the Binary are lined up for a group picture."
+            >
+              <Text textAlign="left" fontSize={["sm", "md"]}>
+                <Heading>Food and Prizes</Heading>
+                <br />
+                Get ready for more than just coding! 🎉 We've got delicious food
+                🥳, awesome prizes 🎁, and tons of fun lined up for you! 🍕🎮
+                Whether you're here for the puzzles or the party, there's
+                something for everyone to enjoy!
+              </Text>
+            </ResponsiveTwoColumns>
+          </Container>
+        </Box>
+
+        <Box backgroundColor="brand.100">
           <Container narrow my>
             <Stack p={3} spacing={3} align="center">
               <Heading as="h1">Schedule</Heading>
@@ -135,7 +155,7 @@ const HomeContainer = () => {
           </Container>
         </Box>
 
-        <Box backgroundColor="brand.100">
+        <Box backgroundColor="brand.50">
           <Container narrow my>
             <Stack p={3} spacing={3} textAlign="center" align="center">
               <Heading as="p">Sponsored by</Heading>
