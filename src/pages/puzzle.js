@@ -65,13 +65,8 @@ const PuzzleContainer = () => {
             <Stack direction={["column", "row"]}>
               <PuzzleLink
                 url="https://www.jigsawexplorer.com/"
-                label="Puzzle 5"
-                description="Description 5"
-              />
-              <PuzzleLink
-                url="https://www.jigsawexplorer.com/"
-                label="Puzzle 6"
-                description="Description 6"
+                label="Puzzle 20"
+                description="Description 20"
               />
             </Stack>
           </Container>
