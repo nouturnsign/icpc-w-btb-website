@@ -2,7 +2,9 @@ import { SimpleGrid } from "@chakra-ui/react";
 
 import OneMember from "components/onemember";
 
-const AllMembers = ({ membersData }) => {
+const AllMembers = ({ membersData, icpc = false }) => {
+  const borderColor = icpc ? "brand.500" : "off.500";
+
   return (
     <SimpleGrid
       minChildWidth="200px"
@@ -11,7 +13,7 @@ const AllMembers = ({ membersData }) => {
       columns={2}
     >
       {membersData.map((member, index) => (
-        <OneMember member={member} index={index} />
+        <OneMember member={member} borderColor={borderColor} index={index} />
       ))}
     </SimpleGrid>
   );

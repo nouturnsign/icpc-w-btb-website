@@ -14,7 +14,7 @@ const TeamContainer = () => (
       </Heading>
 
       <Stack direction="column">
-        <AllMembers membersData={icpc_btb_members} />
+        <AllMembers membersData={icpc_btb_members} icpc />
         <AllMembers membersData={w_btb_members} />
       </Stack>
 
@@ -23,7 +23,7 @@ const TeamContainer = () => (
           <Heading as="h3" fontSize={["2xl", "3xl"]} textAlign="center" py={4}>
             ICPC Contributors
           </Heading>
-          <AllMembers membersData={icpc_members} />
+          <AllMembers membersData={icpc_members} icpc />
         </Box>
         <Box>
           <Heading as="h3" fontSize={["2xl", "3xl"]} textAlign="center" py={4}>

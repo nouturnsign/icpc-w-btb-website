@@ -1,8 +1,6 @@
 import { AspectRatio, Box, Heading, Image, Text } from "@chakra-ui/react";
 
-const OneMember = ({ member, index }) => {
-  const borderColor = member.icpc ? "brand.500" : "off.500"; // TODO: use W branding
-
+const OneMember = ({ member, borderColor, index }) => {
   return (
     <Box key={index} rounded="lg" overflow="hidden" p={2}>
       <center>
