@@ -2,10 +2,10 @@ const config = {
   baseURL: "https://nouturnsign.github.io/icpc-w-btb-website/",
   title: "Break the Binary 2024",
   keywords: "acm,icpc,ucla,competitive,programming", // TODO: add keywords?
-  date: "Saturday, November 16, 2024",
-  time: "8AM - 9PM PT",
+  date: "Sunday, November 17, 2024",
+  time: "10 AM - 4:30 PM PT",
   datetimeLink:
-    "https://www.timeanddate.com/worldclock/fixedtime.html?msg=Break+the+Binary+2024&iso=20241116T08&p1=137&ah=13",
+    "https://www.timeanddate.com/worldclock/fixedtime.html?msg=Break+the+Binary+2024&iso=20241117T10&p1=137&ah=6&am=30",
   isSchedulePublished: false,
   isRegistrationPublished: false,
   isInterestPublished: true,
@@ -23,10 +23,10 @@ const btb_members = [
     icpc: true,
   },
   {
-    image: "hz.jpg",
-    name: "Harry Zhou",
-    position: "W Officer",
-    icpc: false,
+    image: "jliu.JPG",
+    name: "Jason Liu",
+    position: "Vice President",
+    icpc: true,
   },
 ];
 
@@ -40,12 +40,6 @@ const icpc_members = [
   {
     image: "am.JPG",
     name: "Akash Madiraju",
-    position: "Vice President",
-    icpc: true,
-  },
-  {
-    image: "jliu.JPG",
-    name: "Jason Liu",
     position: "Vice President",
     icpc: true,
   },
