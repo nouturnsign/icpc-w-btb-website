@@ -264,12 +264,20 @@ const App = () => {
         <Box pt={16}>
           <Routes>
             <Route path="/" element={<HomeContainer />} />
-            <Route path="/schedule" element={<ScheduleRedirect />} />
+            {config.isSchedulePublished && (
+              <Route path="/schedule" element={<ScheduleRedirect />} />
+            )}
             <Route path="/organizers" element={<TeamContainer />} />
             <Route path="/privacy" element={<PrivacyPolicyContainer />} />
-            <Route path="/puzzle" element={<PuzzleContainer />} />
-            <Route path="/interest" element={<InterestRedirect />} />
-            <Route path="/register" element={<RegisterRedirect />} />
+            {config.isPuzzlePublished && (
+              <Route path="/puzzle" element={<PuzzleContainer />} />
+            )}
+            {config.isInterestPublished && (
+              <Route path="/interest" element={<InterestRedirect />} />
+            )}
+            {config.isRegistrationPublished && (
+              <Route path="/register" element={<RegisterRedirect />} />
+            )}
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </Box>
