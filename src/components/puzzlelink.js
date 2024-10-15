@@ -3,7 +3,7 @@ import { Button, Stack, Text } from "@chakra-ui/react";
 
 const PuzzleLink = ({ url, label, description }) => {
   return (
-    <Stack direction={["row", "column"]} textAlign="center" w="150px" p={5}>
+    <Stack direction={["row", "column"]} textAlign="center" w="200px" p={3}>
       <Button
         fontWeight="semibold"
         fontFamily="heading"
