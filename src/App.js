@@ -15,6 +15,7 @@ import {
   SimpleGrid,
   Stack,
   Text,
+  VStack,
   useBreakpointValue,
   useDisclosure,
 } from "@chakra-ui/react";
@@ -187,12 +188,9 @@ const Footer = () => (
             </Link>
           </Stack>
         </Box>
-        <Box>
-          <Heading my={2} fontSize="sm">
-            reach us at
-          </Heading>
+        <VStack>
+          <Heading fontSize="sm">reach us at</Heading>
           <Heading
-            my={2}
             fontSize="sm"
             fontWeight="regular"
             as="a"
@@ -200,7 +198,15 @@ const Footer = () => (
           >
             icpc@uclaacm.com
           </Heading>
-        </Box>
+          <Heading
+            fontSize="sm"
+            fontWeight="regular"
+            as="a"
+            href="mailto:w@uclaacm.com"
+          >
+            w@uclaacm.com
+          </Heading>
+        </VStack>
         <Box>
           <Button
             as="a"
@@ -213,7 +219,6 @@ const Footer = () => (
             variant="solid"
             rounded="lg"
             py={5}
-            my={2}
           >
             join the ACM mailing list
           </Button>
