@@ -25,7 +25,7 @@ const icpc_btb_members = [
   {
     image: "jliu.JPG",
     name: "Jason Liu",
-    position: "Vice President",
+    position: "ICPC Vice President",
   },
 ];
 
