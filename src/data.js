@@ -1,7 +1,7 @@
 const config = {
   baseURL: "https://nouturnsign.github.io/icpc-w-btb-website/",
   title: "Break the Binary 2024",
-  keywords: "acm,icpc,ucla,competitive,programming", // TODO: add keywords?
+  keywords: "acm,icpc,ucla,competitive,puzzle,networking",
   date: "Sunday, November 17, 2024",
   time: "10 AM - 4:30 PM PT",
   datetimeLink:
