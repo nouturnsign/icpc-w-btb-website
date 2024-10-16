@@ -15,7 +15,7 @@ const OneMember = ({ member, borderColor, index }) => {
             <Image
               boxSize="128px"
               src={process.env.PUBLIC_URL + "/assets/member/" + member.image}
-              alt="Picture of Break the Binary contributor"
+              alt={"Picture of Break the Binary contributor: " + member.name}
               rounded="50%"
               objectFit="cover"
               w="100%"
