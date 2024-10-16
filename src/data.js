@@ -69,16 +69,6 @@ const icpc_members = [
     position: "Officer",
   },
   {
-    image: "jh.JPG",
-    name: "Jason Huang",
-    position: "Officer",
-  },
-  {
-    image: "sk.JPG",
-    name: "Shubham Kumar",
-    position: "Officer",
-  },
-  {
     image: "xx.JPG",
     name: "Charlotte Chen",
     position: "Officer",
@@ -99,28 +89,28 @@ const icpc_members = [
     position: "Officer",
   },
   {
-    image: "sk-fake.JPG",
-    name: "Shreyas Kaasyap",
-    position: "Officer",
-  },
-  {
-    image: "ra.jpg",
-    name: "Rathul Anand",
-    position: "Officer",
-  },
-  {
     image: "ew.jpg",
     name: "Eric Wang",
     position: "Officer",
   },
   {
-    image: "ms.jpg",
-    name: "Michael Song",
+    image: "rg.jpg",
+    name: "Riya Gupta",
     position: "Officer",
   },
   {
-    image: "ss.jpg",
-    name: "Surya Subbarao",
+    image: "en.png",
+    name: "Emily Ni",
+    position: "Officer",
+  },
+  {
+    image: "cd.jpeg",
+    name: "Cindy Ding",
+    position: "Officer",
+  },
+  {
+    image: "aka.jpg",
+    name: "Arsh Koneru-Ansari",
     position: "Officer",
   },
 ];
