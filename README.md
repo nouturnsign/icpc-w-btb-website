@@ -42,7 +42,7 @@ This will start the development server on `http://localhost:3000`.
 
 ## Deployment
 
-Use `npm run deploy` to build and deploy.
+GitHub actions automatically triggers a deploy on push to main.
 
 ## Contributing
 
@@ -53,4 +53,4 @@ Create branches and submit a pull requests. Please use
 [`.editorconfig`](https://editorconfig.org/) rules.
 
 If you are using Visual Studio Code, install the recommended extensions, and
-format on save.
+use the provided workspace settings.
