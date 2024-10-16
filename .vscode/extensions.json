@@ -1,11 +1,9 @@
 {
-	"recommendations": [
+  "recommendations": [
     "EditorConfig.EditorConfig",
-		"esbenp.prettier-vscode",
-		"DavidAnson.vscode-markdownlint",
-		"github.vscode-github-actions"
-	],
-	"unwantedRecommendations": [
-		
-	]
+    "esbenp.prettier-vscode",
+    "DavidAnson.vscode-markdownlint",
+    "github.vscode-github-actions"
+  ],
+  "unwantedRecommendations": []
 }
