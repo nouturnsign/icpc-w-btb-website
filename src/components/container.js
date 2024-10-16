@@ -1,4 +1,3 @@
-import React from "react";
 import { Box } from "@chakra-ui/react";
 
 const Container = ({ narrow, children, w, className, my }) => {
