@@ -3,18 +3,26 @@ import {
   Heading,
   HStack,
   Stack,
-  VStack,
   useBreakpointValue,
+  VStack,
 } from "@chakra-ui/react";
+import { useEffect, useState } from "react";
 
 import AllMembers from "components/allmembers";
 import Container from "components/container";
 import MetaHelmet from "components/metahelmet";
 import OneMember from "components/onemember";
-import { icpc_btb_members, w_btb_members, icpc_members, w_members } from "data";
+import { icpc_btb_members, icpc_members, w_btb_members, w_members } from "data";
 
 const TeamContainer = () => {
+  const [hasMounted, setHasMounted] = useState(false);
   const isMobile = useBreakpointValue({ base: true, md: false });
+
+  useEffect(() => {
+    setHasMounted(true);
+  }, []);
+
+  if (!hasMounted) return null;
 
   return (
     <div className="team">

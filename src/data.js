@@ -9,7 +9,7 @@ const config = {
   isSchedulePublished: false,
   isRegistrationPublished: false,
   isInterestPublished: true,
-  isPuzzlePublished: false,
+  isPuzzlePublished: true,
   scheduleLink: "", // TODO
   registerLink: "", // TODO
   interestLink:
