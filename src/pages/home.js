@@ -7,7 +7,7 @@ import {
   Link,
   Stack,
   Text,
-  useBreakpointValue,
+  useMediaQuery,
 } from "@chakra-ui/react";
 
 import Container from "components/container";
@@ -19,7 +19,7 @@ import Sponsor from "components/sponsor";
 import { config } from "data";
 
 const HomeContainer = () => {
-  const isMobile = useBreakpointValue({ base: true, md: false });
+  const [isMobile] = useMediaQuery("(max-width: 768px)");
 
   return (
     <div className="home">

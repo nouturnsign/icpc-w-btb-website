@@ -1,4 +1,4 @@
-import { Box, Flex, Image, useBreakpointValue } from "@chakra-ui/react";
+import { Box, Flex, Image, useMediaQuery } from "@chakra-ui/react";
 
 const ResponsiveTwoColumns = ({
   children,
@@ -7,7 +7,7 @@ const ResponsiveTwoColumns = ({
   reverse = false,
   ...props
 }) => {
-  const isMobile = useBreakpointValue({ base: true, md: false });
+  const [isMobile] = useMediaQuery("(max-width: 768px)");
 
   return (
     <Flex

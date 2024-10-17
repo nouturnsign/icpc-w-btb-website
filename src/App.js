@@ -16,8 +16,8 @@ import {
   Stack,
   Text,
   VStack,
-  useBreakpointValue,
   useDisclosure,
+  useMediaQuery,
 } from "@chakra-ui/react";
 import React, { Suspense } from "react";
 import {
@@ -73,7 +73,7 @@ const MenuContent = () => {
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
-  const isMobile = useBreakpointValue({ base: true, md: false });
+  const [isMobile] = useMediaQuery("(max-width: 768px)");
 
   return (
     <Box

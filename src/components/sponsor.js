@@ -1,7 +1,7 @@
-import { Image, Link, useBreakpointValue } from "@chakra-ui/react";
+import { Image, Link, useMediaQuery } from "@chakra-ui/react";
 
 const Sponsor = ({ sponsor_name, external_link, img_src }) => {
-  const isMobile = useBreakpointValue({ base: true, md: false });
+  const [isMobile] = useMediaQuery("(max-width: 768px)");
 
   return (
     <Link href={external_link} isExternal>
