@@ -1,5 +1,5 @@
-import { Helmet } from "react-helmet";
 import { config } from "data";
+import { Helmet } from "react-helmet";
 
 const MetaHelmet = ({ description }) => {
   return (

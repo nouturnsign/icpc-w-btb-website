@@ -19,7 +19,7 @@ import {
   useBreakpointValue,
   useDisclosure,
 } from "@chakra-ui/react";
-import React, { Suspense, lazy } from "react";
+import React, { Suspense } from "react";
 import {
   FaDiscord,
   FaFacebook,
@@ -32,11 +32,11 @@ import { NavLink, Navigate, Route, Routes } from "react-router-dom";
 import Container from "components/container";
 import NavEntry from "components/naventry";
 import { config } from "data";
+import HomeContainer from "pages/home";
+import PrivacyPolicyContainer from "pages/privacy";
+import PuzzleContainer from "pages/puzzle";
+import TeamContainer from "pages/team";
 
-const HomeContainer = lazy(() => import("pages/home"));
-const PrivacyPolicyContainer = lazy(() => import("pages/privacy"));
-const TeamContainer = lazy(() => import("pages/team"));
-const PuzzleContainer = lazy(() => import("pages/puzzle"));
 const FallbackView = <h1>Loading</h1>;
 
 const ScheduleRedirect = () => {

@@ -1,11 +1,11 @@
 import {
   Heading,
+  Link,
+  List,
+  ListItem,
+  OrderedList,
   Stack,
   Text,
-  List,
-  OrderedList,
-  ListItem,
-  Link,
 } from "@chakra-ui/react";
 
 import Container from "components/container";
