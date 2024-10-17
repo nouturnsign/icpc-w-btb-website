@@ -6,12 +6,7 @@ const AllMembers = ({ membersData, icpc = false }) => {
   const borderColor = icpc ? "brand.500" : "off.500";
 
   return (
-    <SimpleGrid
-      minChildWidth="200px"
-      textAlign="center"
-      justifyContent="center"
-      columns={2}
-    >
+    <SimpleGrid columns={2}>
       {membersData.map((member, index) => (
         <OneMember member={member} borderColor={borderColor} index={index} />
       ))}

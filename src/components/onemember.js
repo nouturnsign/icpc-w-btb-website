@@ -2,7 +2,15 @@ import { AspectRatio, Box, Heading, Image, Text } from "@chakra-ui/react";
 
 const OneMember = ({ member, borderColor, index }) => {
   return (
-    <Box key={index} rounded="lg" overflow="hidden" p={2}>
+    <Box
+      key={index}
+      rounded="lg"
+      overflow="hidden"
+      p={2}
+      textAlign="center"
+      justifyContent="center"
+      minWidth="200px"
+    >
       <center>
         <AspectRatio maxW="152px" ratio={1}>
           <Box
