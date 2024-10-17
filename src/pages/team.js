@@ -1,4 +1,4 @@
-import { Box, Heading, HStack, SimpleGrid, VStack } from "@chakra-ui/react";
+import { Box, Heading, HStack, Stack, VStack } from "@chakra-ui/react";
 
 import AllMembers from "components/allmembers";
 import Container from "components/container";
@@ -47,7 +47,7 @@ const TeamContainer = () => (
         </HStack>
       </VStack>
 
-      <SimpleGrid columns={2}>
+      <Stack direction={["column", "row"]}>
         <Box>
           <Heading as="h3" fontSize={["2xl", "3xl"]} textAlign="center" py={4}>
             ICPC Contributors
@@ -60,7 +60,7 @@ const TeamContainer = () => (
           </Heading>
           <AllMembers membersData={w_members} />
         </Box>
-      </SimpleGrid>
+      </Stack>
     </Container>
   </div>
 );
