@@ -51,29 +51,46 @@ const InterestRedirect = () => {
   window.location.replace(config.interestLink);
 };
 
-const MenuContent = () => {
-  return (
-    <>
-      <NavEntry link="/" label="home" />
-      <NavEntry link="/organizers" label="organizers" />
-      {config.isSchedulePublished && (
-        <NavEntry link={config.scheduleLink} label="schedule" isExternal />
-      )}
-      {config.isPuzzlePublished && <NavEntry link="/puzzle" label="puzzles" />}
-      {config.isRegistrationPublished && (
-        <NavEntry link={config.registerLink} label="register" isExternal />
-      )}
-      {config.isInterestPublished && (
-        <NavEntry link={config.interestLink} label="interest" isExternal />
-      )}
-    </>
-  );
-};
-
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
   const [isMobile] = useMediaQuery("(max-width: 768px)");
+
+  const MenuContent = () => {
+    return (
+      <>
+        <NavEntry link="/" label="home" onClick={onClose} />
+        <NavEntry link="/organizers" label="organizers" onClick={onClose} />
+        {config.isSchedulePublished && (
+          <NavEntry
+            link={config.scheduleLink}
+            label="schedule"
+            isExternal
+            onClick={onClose}
+          />
+        )}
+        {config.isPuzzlePublished && (
+          <NavEntry link="/puzzle" label="puzzles" onClick={onClose} />
+        )}
+        {config.isRegistrationPublished && (
+          <NavEntry
+            link={config.registerLink}
+            label="register"
+            isExternal
+            onClick={onClose}
+          />
+        )}
+        {config.isInterestPublished && (
+          <NavEntry
+            link={config.interestLink}
+            label="interest"
+            isExternal
+            onClick={onClose}
+          />
+        )}
+      </>
+    );
+  };
 
   return (
     <Box
@@ -111,17 +128,7 @@ const Navbar = () => {
             <MenuContent />
           ) : (
             <Stack direction="row">
-              {!isOpen && (
-                <IconButton
-                  ref={btnRef}
-                  size="sm"
-                  colorScheme="brand"
-                  aria-label="Open menu"
-                  icon={<TriangleDownIcon />}
-                  onClick={onOpen}
-                />
-              )}
-              {isOpen && (
+              {isOpen ? (
                 <IconButton
                   ref={btnRef}
                   size="sm"
@@ -129,6 +136,15 @@ const Navbar = () => {
                   aria-label="Close menu"
                   icon={<TriangleUpIcon />}
                   onClick={onClose}
+                />
+              ) : (
+                <IconButton
+                  ref={btnRef}
+                  size="sm"
+                  colorScheme="brand"
+                  aria-label="Open menu"
+                  icon={<TriangleDownIcon />}
+                  onClick={onOpen}
                 />
               )}
             </Stack>
@@ -141,7 +157,6 @@ const Navbar = () => {
           >
             <DrawerOverlay />
             <DrawerContent bg="secondary" color="primary">
-              {/* <DrawerCloseButton /> */}
               <DrawerHeader>Menu</DrawerHeader>
               <DrawerBody>
                 <MenuContent />
