@@ -25,22 +25,21 @@ const HomeContainer = () => {
     <div className="home">
       <MetaHelmet description="Break the Binary: ACM ICPC and ACM W's problem-solving extravaganza!" />
       <Box bg="#FCEDF3">
-        {!isMobile && (
-          <Image
-            mx="auto"
-            objectFit="fit"
-            src={process.env.PUBLIC_URL + "/assets/banner.png"}
-            alt="Break the Binary Banner"
-            maxHeight="500px"
-          />
-        )}
-        {isMobile && (
+        {isMobile ? (
           <Image
             mx="auto"
             objectFit="fit"
             src={process.env.PUBLIC_URL + "/assets/banner-mobile.png"}
             alt="Break the Binary Banner"
             width="100%"
+          />
+        ) : (
+          <Image
+            mx="auto"
+            objectFit="fit"
+            src={process.env.PUBLIC_URL + "/assets/banner.png"}
+            alt="Break the Binary Banner"
+            maxHeight="500px"
           />
         )}
       </Box>
