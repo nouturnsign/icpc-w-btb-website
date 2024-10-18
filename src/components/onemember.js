@@ -1,9 +1,8 @@
 import { AspectRatio, Box, Heading, Image, Text } from "@chakra-ui/react";
 
-const OneMember = ({ member, borderColor, index }) => {
+const OneMember = ({ member, borderColor }) => {
   return (
     <Box
-      key={index}
       rounded="lg"
       overflow="hidden"
       p={2}

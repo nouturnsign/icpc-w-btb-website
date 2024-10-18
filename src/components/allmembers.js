@@ -8,7 +8,11 @@ const AllMembers = ({ membersData, icpc = false }) => {
   return (
     <SimpleGrid columns={2}>
       {membersData.map((member, index) => (
-        <OneMember member={member} borderColor={borderColor} index={index} />
+        <OneMember
+          member={member}
+          borderColor={borderColor}
+          key={member.name + index}
+        />
       ))}
     </SimpleGrid>
   );
