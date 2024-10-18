@@ -7,7 +7,7 @@ const ResponsiveTwoColumns = ({
   reverse = false,
   ...props
 }) => {
-  const [isMobile] = useMediaQuery("(max-width: 768px)");
+  const [isMobile] = useMediaQuery("(max-width: 768px)", { ssr: false });
 
   return (
     <Flex

@@ -19,7 +19,7 @@ import Sponsor from "components/sponsor";
 import { config } from "data";
 
 const HomeContainer = () => {
-  const [isMobile] = useMediaQuery("(max-width: 768px)");
+  const [isMobile] = useMediaQuery("(max-width: 768px)", { ssr: false });
 
   return (
     <div className="home">

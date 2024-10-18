@@ -14,7 +14,7 @@ import OneMember from "components/onemember";
 import { icpc_btb_members, icpc_members, w_btb_members, w_members } from "data";
 
 const TeamContainer = () => {
-  const [isMobile] = useMediaQuery("(max-width: 768px)");
+  const [isMobile] = useMediaQuery("(max-width: 768px)", { ssr: false });
 
   return (
     <div className="team">

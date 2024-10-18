@@ -54,7 +54,7 @@ const InterestRedirect = () => {
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
-  const [isMobile] = useMediaQuery("(max-width: 768px)");
+  const [isMobile] = useMediaQuery("(max-width: 768px)", { ssr: false });
 
   const MenuContent = () => {
     return (
