@@ -1,9 +1,10 @@
 import { Box, List, ListIcon, ListItem, Text } from "@chakra-ui/react";
-import { config } from "data";
 import { FaAward, FaClock, FaComments, FaUtensils } from "react-icons/fa";
 import { FaCircleCheck } from "react-icons/fa6";
 import { GiMicrophone } from "react-icons/gi";
 import { IoExtensionPuzzle } from "react-icons/io5";
+
+import { config } from "data";
 
 const ScheduleItem = ({ icon, label, value }) => {
   return (
