@@ -38,7 +38,7 @@ directory:
 npm start
 ```
 
-This will start the development server on `http://localhost:3000`.
+This will start the development server on `http://localhost:3000/icpc-w-btb-website`.
 
 ## Deployment
 
