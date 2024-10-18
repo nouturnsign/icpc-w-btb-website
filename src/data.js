@@ -16,6 +16,115 @@ const config = {
     "https://docs.google.com/forms/d/e/1FAIpQLSfGJIQRcJR0yAQzoLVhQqd9Db74COT8_vH-gvaDO5lK9TQwOg/viewform",
 };
 
+const acts = [
+  { title: "Act I: The New Threat", start: 0, end: 10 },
+  { title: "Act II: Gathering the Team", start: 10, end: 19 },
+  { title: "Act III: The Final Battle", start: 19, end: 20 },
+];
+
+const puzzles = [
+  {
+    url: "https://www.jigsawexplorer.com/",
+    label: "Puzzle 1",
+    description: "Puzzle 1",
+  },
+  {
+    url: "https://www.jigsawexplorer.com/",
+    label: "Puzzle 2",
+    description: "Puzzle 2",
+  },
+  {
+    url: "https://www.jigsawexplorer.com/",
+    label: "Puzzle 3",
+    description: "Puzzle 3",
+  },
+  {
+    url: "https://www.jigsawexplorer.com/",
+    label: "Puzzle 4",
+    description: "Puzzle 4",
+  },
+  {
+    url: "https://www.jigsawexplorer.com/",
+    label: "Puzzle 5",
+    description: "Puzzle 5",
+  },
+  {
+    url: "https://www.jigsawexplorer.com/",
+    label: "Puzzle 6",
+    description: "Puzzle 6",
+  },
+  {
+    url: "https://www.jigsawexplorer.com/",
+    label: "Puzzle 7",
+    description: "Puzzle 7",
+  },
+  {
+    url: "https://www.jigsawexplorer.com/",
+    label: "Puzzle 8",
+    description: "Puzzle 8",
+  },
+  {
+    url: "https://www.jigsawexplorer.com/",
+    label: "Puzzle 9",
+    description: "Puzzle 9",
+  },
+  {
+    url: "https://www.jigsawexplorer.com/",
+    label: "Puzzle 10",
+    description: "Puzzle 10",
+  },
+  {
+    url: "https://www.jigsawexplorer.com/",
+    label: "Puzzle 11",
+    description: "Puzzle 11",
+  },
+  {
+    url: "https://www.jigsawexplorer.com/",
+    label: "Puzzle 12",
+    description: "Puzzle 12",
+  },
+  {
+    url: "https://www.jigsawexplorer.com/",
+    label: "Puzzle 13",
+    description: "Puzzle 13",
+  },
+  {
+    url: "https://www.jigsawexplorer.com/",
+    label: "Puzzle 14",
+    description: "Puzzle 14",
+  },
+  {
+    url: "https://www.jigsawexplorer.com/",
+    label: "Puzzle 15",
+    description: "Puzzle 15",
+  },
+  {
+    url: "https://www.jigsawexplorer.com/",
+    label: "Puzzle 16",
+    description: "Puzzle 16",
+  },
+  {
+    url: "https://www.jigsawexplorer.com/",
+    label: "Puzzle 17",
+    description: "Puzzle 17",
+  },
+  {
+    url: "https://www.jigsawexplorer.com/",
+    label: "Puzzle 18",
+    description: "Puzzle 18",
+  },
+  {
+    url: "https://www.jigsawexplorer.com/",
+    label: "Puzzle 19",
+    description: "Puzzle 19",
+  },
+  {
+    url: "https://www.jigsawexplorer.com/",
+    label: "Puzzle 20",
+    description: "Puzzle 20",
+  },
+];
+
 const icpc_btb_members = [
   {
     image: "hz.jpg",
@@ -180,4 +289,12 @@ const w_members = [
   },
 ];
 
-export { config, icpc_btb_members, icpc_members, w_btb_members, w_members };
+export {
+  config,
+  acts,
+  puzzles,
+  icpc_btb_members,
+  icpc_members,
+  w_btb_members,
+  w_members,
+};

@@ -1,8 +1,9 @@
 import { Box, Heading, Stack } from "@chakra-ui/react";
 
+import ActBox from "components/actbox";
 import Container from "components/container";
 import MetaHelmet from "components/metahelmet";
-import PuzzleLink from "components/puzzlelink";
+import { acts } from "data";
 
 const PuzzleContainer = () => {
   return (
@@ -17,60 +18,9 @@ const PuzzleContainer = () => {
       </Box>
 
       <Stack spacing={0}>
-        <Box backgroundColor="off.50">
-          <Container narrow>
-            <Heading as="h2" textAlign="left" py={4}>
-              Act I: The New Threat
-            </Heading>
-            <Stack direction={["column", "row"]}>
-              <PuzzleLink
-                url="https://www.jigsawexplorer.com/"
-                label="Puzzle 1"
-                description="Description 1"
-              />
-              <PuzzleLink
-                url="https://www.jigsawexplorer.com/"
-                label="Puzzle 2"
-                description="Description 2"
-              />
-            </Stack>
-          </Container>
-        </Box>
-
-        <Box backgroundColor="off.100">
-          <Container narrow>
-            <Heading as="h2" textAlign="left" py={4}>
-              Act II: Gathering the Team
-            </Heading>
-            <Stack direction={["column", "row"]}>
-              <PuzzleLink
-                url="https://www.jigsawexplorer.com/"
-                label="Puzzle 3"
-                description="Description 3"
-              />
-              <PuzzleLink
-                url="https://www.jigsawexplorer.com/"
-                label="Puzzle 4"
-                description="Description 4"
-              />
-            </Stack>
-          </Container>
-        </Box>
-
-        <Box backgroundColor="off.50">
-          <Container narrow>
-            <Heading as="h2" textAlign="left" py={4}>
-              Act III: The Final Battle
-            </Heading>
-            <Stack direction={["column", "row"]}>
-              <PuzzleLink
-                url="https://www.jigsawexplorer.com/"
-                label="Puzzle 20"
-                description="Description 20"
-              />
-            </Stack>
-          </Container>
-        </Box>
+        {acts.map((act, index) => {
+          return <ActBox act={act} key={"act" + index} />;
+        })}
       </Stack>
     </div>
   );
