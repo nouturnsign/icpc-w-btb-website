@@ -20,7 +20,7 @@ const ScheduleItem = ({ icon, label, value }) => {
 const Schedule = ({ fontSize }) => {
   return (
     <Box fontSize={fontSize}>
-      <List as="ul" fontSize={("xs", "md")} fontWeight="bold">
+      <List as="ul" fontSize={["sm", "md"]} fontWeight="bold">
         {config.isRegistrationPublished && (
           <ScheduleItem icon={FaClock} label="Register By:" value="DEADLINE" />
         )}
