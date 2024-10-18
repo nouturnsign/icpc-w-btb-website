@@ -87,8 +87,8 @@ const HomeContainer = () => {
                   Binary. There are three to five students per group, and they
                   appear to be thinking."
             >
+              <Heading>Puzzle Hunt!</Heading>
               <Text textAlign="left" fontSize={["sm", "md"]}>
-                <Heading>Puzzle Hunt!</Heading>
                 <br />
                 Swing into action with this Spider-Man-themed problem-solving
                 extravaganza💫, inspired by everyone's favorite web-slinger. Get
@@ -113,8 +113,8 @@ const HomeContainer = () => {
                   including Dr. Smallberg answer questions."
               reverse
             >
+              <Heading>Networking</Heading>
               <Text textAlign="left" fontSize={["sm", "md"]}>
-                <Heading>Networking</Heading>
                 <br />
                 At Break the Binary, we're tearing down barriers just like
                 Spidey takes down villains 🕷️⚡. Whether you're a seasoned coder
@@ -133,8 +133,8 @@ const HomeContainer = () => {
               imgSrc={process.env.PUBLIC_URL + "/assets/photos/group.jpg"}
               imgAlt="The participants of Break the Binary are lined up for a group picture."
             >
+              <Heading>Food and Prizes</Heading>
               <Text textAlign="left" fontSize={["sm", "md"]}>
-                <Heading>Food and Prizes</Heading>
                 <br />
                 Get ready for more than just coding! 🎉 We've got delicious food
                 🥳, awesome prizes 🎁, and tons of fun lined up for you! 🍕🎮
