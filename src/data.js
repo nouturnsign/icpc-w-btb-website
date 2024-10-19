@@ -140,7 +140,7 @@ const icpc_btb_members = [
 
 const w_btb_members = [
   {
-    image: "default.png",
+    image: "ag.jpg",
     name: "Anmol Gupta",
     position: "W Officer",
   },
@@ -150,7 +150,7 @@ const w_btb_members = [
     position: "W Officer",
   },
   {
-    image: "default.png",
+    image: "el.jpg",
     name: "Emily Lu",
     position: "W Officer",
   },
@@ -226,12 +226,12 @@ const icpc_members = [
 
 const w_members = [
   {
-    image: "default.png",
+    image: "nd.jpeg",
     name: "Nemi Desai",
     position: "Co-President",
   },
   {
-    image: "default.png",
+    image: "sp.png",
     name: "Sananshi Pidyar",
     position: "Co-President",
   },
@@ -240,24 +240,24 @@ const w_members = [
     name: "Evy Nguyen",
     position: "Advisor, President Emeritus",
   },
-  { image: "default.png", name: "Claire Li", position: "Officer" },
+  { image: "cl.jpg", name: "Claire Li", position: "Officer" },
   {
-    image: "default.png",
+    image: "ry.jpg",
     name: "Rachel Young",
     position: "Officer",
   },
   {
-    image: "default.png",
+    image: "kw.jpg",
     name: "Kaitlyn Wu",
     position: "Officer",
   },
   {
-    image: "default.png",
+    image: "mj.png",
     name: "Megan Jacob",
     position: "Officer",
   },
   {
-    image: "default.png",
+    image: "jg.png",
     name: "Jessica Guan",
     position: "Officer",
   },
@@ -272,18 +272,18 @@ const w_members = [
     position: "Officer",
   },
   {
-    image: "default.png",
+    image: "ml.jpeg",
     name: "Michelle Lee",
     position: "Officer",
   },
   {
-    image: "default.png",
+    image: "ma.jpg",
     name: "Meena Annamalai",
     position: "Officer",
   },
-  { image: "default.png", name: "Ria Kundu", position: "Officer" },
+  { image: "rk.jpg", name: "Ria Kundu", position: "Officer" },
   {
-    image: "default.png",
+    image: "eg.jpeg",
     name: "Elaine Guan",
     position: "Officer",
   },
