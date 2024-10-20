@@ -226,7 +226,7 @@ const icpc_members = [
 
 const w_members = [
   {
-    image: "nd.JPEG",
+    image: "nd.jpeg",
     name: "Nemi Desai",
     position: "Co-President",
   },
