@@ -203,7 +203,7 @@ const icpc_members = [
     position: "Officer",
   },
   {
-    image: "rg.jpg",
+    image: "riyag.jpg",
     name: "Riya Gupta",
     position: "Officer",
   },
