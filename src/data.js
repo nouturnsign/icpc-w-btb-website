@@ -286,17 +286,16 @@ const w_members = [
     name: "Meena Annamalai",
     position: "Officer",
   },
-  { 
-    image: "rk.jpg", 
-    name: "Ria Kundu", 
-    position: "Officer" 
+  {
+    image: "rk.jpg",
+    name: "Ria Kundu",
+    position: "Officer",
   },
   {
     image: "eg.jpeg",
     name: "Elaine Guan",
     position: "Officer",
-  }
-  
+  },
 ];
 
 export {
