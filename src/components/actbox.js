@@ -4,9 +4,9 @@ import Container from "components/container";
 import PuzzleLink from "components/puzzlelink";
 import { puzzles } from "data";
 
-const ActBox = ({ act }) => {
+const ActBox = ({ act, dark = false }) => {
   return (
-    <Box backgroundColor="off.50">
+    <Box backgroundColor={dark ? "off.100" : "off.50"}>
       <Container narrow>
         <Heading as="h2" textAlign="left" py={4}>
           {act.title}

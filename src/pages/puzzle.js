@@ -19,7 +19,9 @@ const PuzzleContainer = () => {
 
       <Stack spacing={0}>
         {acts.map((act, index) => {
-          return <ActBox act={act} key={"act" + index} />;
+          return (
+            <ActBox act={act} dark={index % 2 === 1} key={"act" + index} />
+          );
         })}
       </Stack>
     </div>
